@@ -1,0 +1,153 @@
+<head>
+  <title> Mission Bit - Teach Mission kids to code </title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<!--   // <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script> -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<!--   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap/css/style.carousel.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Expletus+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Stalinist+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <div id="mission-bit" class="container">
+    {{> navigation}}
+    {{> carousel}}
+    {{> footer}}
+    {{> leaderboard}}
+  </div>
+  <script src="bootstrap/js/bootstrap-carousel.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+<template name="navigation">
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html" style="font-f"> Mission Bit </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="#"> Code Classes </a></li>
+              <li><a href="#"> Accelerator </a></li>
+              <li><a href="#"> Supporters </a></li>
+              <li><a href="#"> Students </a></li>
+              <li><a href="#"> Values </a></li>
+              <li><a href="#"> About </a></li>
+              <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+    </div> <!-- /.container -->
+  </div><!-- /.navbar-wrapper -->
+</template>
+
+<template name="carousel">
+  <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="http://travelblog.viator.com/wp-content/uploads/2008/10/mission-balmy-alley-mural-trad.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Finger Canvas</h1>
+            <p class="lead"> Reimagining kids edutainment with webRTC. </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="http://travelblog.viator.com/wp-content/uploads/2008/10/mission-balmy-alley-mural-trad.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Yummy Show</h1>
+            <p class="lead">Innovating cloud hosted business presentation software with reactive data</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div><!-- /.carousel -->
+</template>
+
+<template name="footer">
+  <div id="footer-div" class="footer">
+    <div id="the-foot" class="">
+      <p id="yummy-trade" class="pull-left"> A <a href="http://www.yummycorp.co">Yummy Corp</a> Invention </p>
+      <p id="reds-trade" class="pull-right">&copy; 2013 <a href="http://www.missionreds.com/"> Mission Reds</a>, LLC</p>
+    </div>
+  </div>
+</template>
+
+<template name="leaderboard">
+  {{#if callLeaderBoard}}
+    {{#unless selected_name}}
+      <div class="none">Click a tagline to select</div>
+    {{/unless}}
+  <!--   {{#if selected_name}}
+      <div class="row details">
+          <div class="span10 pull-left">
+            {{selected_name}}
+          </div>
+          <input type="button" class="inc pullright" value="Give 5 points" />
+      </div>
+    {{/if}} -->
+    <div id="leaderboard-row" class="row">
+        {{#each players}}
+          {{> player}}
+        {{/each}}
+    </div>
+    <div id="mission-bit-row" class="row">
+      <div id="mission-bit-tagline" class="span12">
+        <input id="new_player_name" class="span12" type="text" placeholder="input new tagline suggestion here" />
+        <input type="button" class="span4 add" value="click here to add new tagline" />
+      </div>
+    </div>
+  {{/if}}
+
+</template>
+
+<template name="player">
+  <div id="leaderboard-player" class="player {{selected}}">
+
+    {{#unless votedFor}}
+      <span class="span2 pull-left vote-trigger">
+        Click to Vote
+      </span>
+    {{/unless}}
+
+    {{#if votedFor}}
+      <span class="span2 pull-left vote-message">
+        I like this tagline
+      </span>
+    {{/if}}
+
+      <span class="span8 name">
+        {{name}}
+      </span>
+
+      <span class="span2 score pull-right">
+        {{score}}
+      </span>
+  </div>
+</template>
+
+
