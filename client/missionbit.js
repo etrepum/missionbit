@@ -9,6 +9,7 @@ Template.actionButtons.events({
   'mouseup #donate-action, touchend #donate-action': function () {
     Session.set("donate", true);
     Session.set("divingIn", true);
+    Session.set("pledgeReady", true)
     Session.set("showValues", false);
     Session.set("aboutInfo", false)
     Session.set("codeSchool", false);

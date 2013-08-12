@@ -10,40 +10,53 @@
     </div>
   </div> <!-- ROW -->
 
-  <div id="pledge-amount-row" class="row">
-    <div id="donate-pledge-input-div" class="pledge-input-div">
-      <form id="pledge-form">
-        <span id="donate-pledge-25" class="span2 pledge-input">
-          <span class="pledge-amount-text"> $25 </span> <input id="pledge-input-25" name="pledge"class="pledge-amount-input" type="radio" value="$25">
-        </span>
+  {{#if pledgeReady}}
+    <div id="pledge-amount-row" class="row">
+      <div id="donate-pledge-input-div" class="pledge-input-div">
+        <form id="pledge-form">
+          <span id="donate-pledge-25" class="span2 pledge-input">
+            <span class="pledge-amount-text"> $25 </span> <input id="pledge-input-25" name="pledge"class="pledge-amount-input" type="radio" value="25">
+          </span>
 
-        <span id="donate-pledge-50" class="span2 pledge-input">
-          <span class="pledge-amount-text"> $50 </span> <input id="pledge-input-50" name="pledge" class="pledge-amount-input" type="radio" value="$50">
-        </span>
+          <span id="donate-pledge-50" class="span2 pledge-input">
+            <span class="pledge-amount-text"> $50 </span> <input id="pledge-input-50" name="pledge" class="pledge-amount-input" type="radio" value="50">
+          </span>
 
-        <span id="donate-pledge-100" class="span2 pledge-input">
-          <span class="pledge-amount-text"> $100 </span> <input id="pledge-input-100" name="pledge" class="pledge-amount-input" type="radio" value="$100">
-        </span>
+          <span id="donate-pledge-100" class="span2 pledge-input">
+            <span class="pledge-amount-text"> $100 </span> <input id="pledge-input-100" name="pledge" class="pledge-amount-input" type="radio" value="100">
+          </span>
 
-        <span id="donate-pledge-250" class="span2 pledge-input">
-          <span class="pledge-amount-text"> $250 </span> <input id="pledge-input-250" name="pledge" class="pledge-amount-input" type="radio" value="$250">
-        </span>
+          <span id="donate-pledge-250" class="span2 pledge-input">
+            <span class="pledge-amount-text"> $250 </span> <input id="pledge-input-250" name="pledge" class="pledge-amount-input" type="radio" value="250">
+          </span>
 
-        <span id="donate-pledge-500" class="span2 pledge-input">
-          <span class="pledge-amount-text"> $500 </span> <input id="pledge-input-500" name="pledge" class="pledge-amount-input" type="radio" value="$500">
-        </span>
+          <span id="donate-pledge-500" class="span2 pledge-input">
+            <span class="pledge-amount-text"> $500 </span> <input id="pledge-input-500" name="pledge" class="pledge-amount-input" type="radio" value="500">
+          </span>
 
-        <span id="donate-pledge-1000" class="span2 pledge-input">
-          <span class="pledge-amount-text"> $1000 </span> <input id="pledge-input-1000" name="pledge" class="pledge-amount-input" type="radio" value="$1000">
-        </span>
-      </form>
-    </div>
-  </div> <!-- ROW -->
+          <span id="donate-pledge-1000" class="span2 pledge-input">
+            <span class="pledge-amount-text"> $1000 </span> <input id="pledge-input-1000" name="pledge" class="pledge-amount-input" type="radio" value="1000">
+          </span>
+        </form>
+      </div>
+    </div> <!-- ROW -->
+  {{/if}}
 
   <div id="pledge-submit-row" class="row">
     <div id="pledge-submit-div" class="submit-div">
       <span class="span3 pledge-submit">
         <input id="donate-pledge-submit" class="pledge-submit-button" type="submit" value="Make Pledge">
+      </span>
+    </div>
+  </div> <!-- ROW -->
+
+  <div id="pledge-details-row" class="row">
+    <div id="pledge-details-div" class="details-div">
+      <span class="span12 pledge-totals">
+        <h3 id="pledge-grand-total-title" class="pledge-total-title"> Pledge Total </h3>
+      </span>
+      <span class="span12 pledge-totals">
+        <h1 id="pledge-grand-total-amount" class="pledge-total"> {{totalPledges}} </h1>
       </span>
     </div>
   </div> <!-- ROW -->
