@@ -9,10 +9,12 @@ Template.navigation.events({
   'mouseup #code-school, touchend #code-school': function () {
     Session.set("codeSchool", true);
     Session.set("divingIn", true);
+    Session.set("showValues", false);
   },
   'mouseup #values, touchend #values': function () {
     Session.set("showValues", true);
     Session.set("divingIn", true);
+    Session.set("codeSchool", false);
   }
 })
 
