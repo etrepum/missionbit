@@ -5,24 +5,37 @@ Template.homeCarousel.insideClick = function () {
   return clickCheck;
 }
 
+Template.actionButtons.events({
+  'mouseup #donate-action, touchend #donate-action': function () {
+    Session.set("donate", true);
+    Session.set("divingIn", true);
+    Session.set("showValues", false);
+    Session.set("aboutInfo", false)
+    Session.set("codeSchool", false);
+  }
+})
+
 Template.navigation.events({
   'mouseup #code-school, touchend #code-school': function () {
     Session.set("codeSchool", true);
     Session.set("divingIn", true);
     Session.set("showValues", false);
     Session.set("aboutInfo", false);
+    Session.set("donate", false);
   },
   'mouseup #values, touchend #values': function () {
     Session.set("showValues", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
     Session.set("aboutInfo", false);
+    Session.set("donate", false);
   },
   'mouseup #about, touchend #about': function () {
     Session.set("aboutInfo", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
     Session.set("showValues", false);
+    Session.set("donate", false);
   }
 })
 

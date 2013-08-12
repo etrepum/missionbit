@@ -18,6 +18,45 @@ body {
     height: 50px;
 }
 
+/* >>>>>>>>> DONATE <<<<<<<<<<< */
+
+#lets-donate-row {
+    margin-top: 100px;
+}
+
+#donate-pledge-call {
+    background-color: peachpuff;
+}
+
+.pledge-amount-input {
+    vertical-align: bottom;
+}
+
+.pledge-submit-button {
+    vertical-align: bottom;
+    background-color: blue;
+    color: white;
+    font-size: 1.5em;
+}
+
+.pledge-amount-text {
+    font-weight: bold;
+    font-size: 2em;
+    vertical-align: bottom;
+}
+
+#pledge-amount-row {
+    margin-top: 1.5em;
+}
+
+#donate-pledge-25 {
+    background-color: peachpuff;
+}
+
+.pledge-submit {
+/*    background-color: peachpuff;*/
+}
+
 /* >>>>>>>>>> CODE SCHOOL <<<<<<<<<< */
 
 .philo-tenent {

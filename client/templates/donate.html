@@ -1,0 +1,52 @@
+
+<template name="letsDonate">
+  {{#if toDonate}}
+
+  <div id="lets-donate-row" class="row">
+    <div id="lets-donate-div" class="donate">
+      <div id="donate-pledge-call" class="span3 pull-left">
+        <h1> Make a pledge </h1>
+      </div>
+    </div>
+  </div> <!-- ROW -->
+
+  <div id="pledge-amount-row" class="row">
+    <div id="donate-pledge-input-div" class="pledge-input-div">
+
+      <span id="donate-pledge-25" class="span2 pledge-input">
+        <span class="pledge-amount-text"> $25 </span> <input id="pledge-input-25" class="pledge-amount-input" type="radio" value="$25">
+      </span>
+
+      <span id="donate-pledge-50" class="span2 pledge-input">
+        <span class="pledge-amount-text"> $50 </span> <input id="pledge-input-50" class="pledge-amount-input" type="radio" value="$50">
+      </span>
+
+      <span id="donate-pledge-100" class="span2 pledge-input">
+        <span class="pledge-amount-text"> $100 </span> <input id="pledge-input-100" class="pledge-amount-input" type="radio" value="$100">
+      </span>
+
+      <span id="donate-pledge-250" class="span2 pledge-input">
+        <span class="pledge-amount-text"> $250 </span> <input id="pledge-input-250" class="pledge-amount-input" type="radio" value="$250">
+      </span>
+
+      <span id="donate-pledge-500" class="span2 pledge-input">
+        <span class="pledge-amount-text"> $500 </span> <input id="pledge-input-500" class="pledge-amount-input" type="radio" value="$500">
+      </span>
+
+      <span id="donate-pledge-1000" class="span2 pledge-input">
+        <span class="pledge-amount-text"> $1000 </span> <input id="pledge-input-1000" class="pledge-amount-input" type="radio" value="$1000">
+      </span>
+
+    </div>
+  </div> <!-- ROW -->
+
+  <div id="pledge-submit-row" class="row">
+    <div id="pledge-submit-div" class="submit-div">
+      <span class="span3 pledge-submit">
+        <input id="donate-pledge-submit" class="pledge-submit-button" type="submit" value="Make Pledge">
+      </span>
+    </div>
+  </div> <!-- ROW -->
+
+  {{/if}}
+</template>

@@ -31,10 +31,12 @@
     {{> codeSchool}}
     {{> showValues}}
     {{> aboutInfo}}
+    {{> letsDonate}}
     {{> footer}}
   </div>
   <script src="bootstrap/js/bootstrap-carousel.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="bootstrap/js/bootstrap-button.js"></script>
 </body>
 
 <template name="navigation">
@@ -81,18 +83,7 @@
               </br>
               <span id="third-bullet" class="pull-right caption-bullet lead bullet"> Flexible curriculm design </span>
             </div> <!-- FIRST CAPTION -->
-
-            <div id="action-caption" class="span4 sub-caption">
-              <div id="donate-action-div" class="sub-caption-action">
-                <span id="donate-action" class="span3 lead"> DONATE </span>
-              </div>
-              <div id="volunteer-action-div" class="sub-caption-action">
-                <span id="volunteer-action" class="span3 lead"> TEACH </span>
-              </div>
-              <div id="learn-action-div" class="sub-caption-action">
-                <span id="learn-action" class="span3 lead"> LEARN </span>
-              </div>
-            </div> <!-- DONATE CAPTION -->
+            {{> actionButtons}}
           </div> <!-- CONTAINER -->
         </div>
         <div class="item">
