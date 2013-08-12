@@ -1,5 +1,4 @@
 
-
 Template.leaderboard.players = function () {
   return Players.find({}, {sort: {score: -1, name: 1}});
 };
@@ -25,6 +24,17 @@ Template.player.selected = function () {
 //   }
 // });
 
+Template.homeCarousel.insideClick = function () {
+  var clickCheck = Session.get("divingIn");
+  return clickCheck;
+}
+
+Template.navigation.events({
+  'mouseup #code-school, touchend #code-school': function () {
+    Session.set("codeSchool", true);
+    Session.set("divingIn", true);
+  }
+})
 
 Template.leaderboard.events({
   'click input.add': function () {

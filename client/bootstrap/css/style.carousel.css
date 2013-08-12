@@ -42,14 +42,14 @@
       font-size: 2em;
       font-weight: bold;
       text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Aldrich', sans-serif;
       padding-top: 20px
     }
 
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
       padding: 20px 20px;
-      font-family: 'Metrophobic', sans-serif;
+      font-family: 'Aldrich', sans-serif;
       font-size: 1.25em;
     }
 
@@ -79,7 +79,7 @@
       padding-top: 25px;
       font-size: 120px;
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: red;
+      background-color: orange;
       color: black;
       border: 0;
       z-index: 10;
@@ -102,8 +102,8 @@
       position: static;
       max-width: 550px;
       padding: 20px 20px 30px 20px;
-      margin-top: 200px;
-      margin-left: 60px;
+      margin-top: 150px;
+      margin-left: 75px;
       border-radius: 20px;
     }
     .carousel-caption h1,
@@ -114,17 +114,74 @@
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
     }
     .carousel-caption h1 {
-      font-family: 'Rock Salt', cursive;
+      font-family: 'Audiowide', cursive;
       margin-bottom: 10px;
+      font-size: 2em;
     }
 
     .carousel-caption .lead {
-      font-family: 'Metrophobic', sans-serif;
+/*      font-family: 'Aldrich', sans-serif;*/
+      font-family: 'Josefin Sans', sans-serif;
       padding-top: 10px;
     }
 
     .carousel-caption .btn {
       margin-top: 10px;
+    }
+
+    #donate-action-div {
+      position: static;
+      margin-top: 150px;
+      color: white;
+      padding-left: 7em;
+      font-family: 'Expletus Sans', cursive;
+    }
+
+    #volunteer-action-div {
+      position: static;
+      margin-top: 2em;
+      color: white;
+      padding-left: 7em;
+      font-family: 'Expletus Sans', cursive;
+    }
+
+    #learn-action-div {
+      position: static;
+      margin-top: 2em;
+      color: white;
+      padding-left: 7em;
+      font-family: 'Expletus Sans', cursive;
+    }
+
+    #donate-action {
+      background-color: black;
+      text-align: center;
+      font-size: 3em;
+      height: 1.10em;
+      padding-top: 0.6em;
+      border-radius: .15em;
+    }
+
+    #volunteer-action {
+      background-color: black;
+      text-align: center;
+      font-size: 3em;
+      height: 1.10em;
+      padding-top: 0.6em;
+      border-radius: .15em;
+    }
+
+    #learn-action {
+      background-color: black;
+      text-align: center;
+      font-size: 3em;
+      height: 1.10em;
+      padding-top: 0.6em;
+      border-radius: .15em;
+    }
+
+    .bullet {
+      float: right;
     }
 
 
