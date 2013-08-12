@@ -83,7 +83,7 @@ body {
 }
 
 #contact-us-details {
-    background-color: peachpuff;
+/*    background-color: peachpuff;*/
 }
 
 .sub-caption-about {
@@ -136,6 +136,31 @@ body {
     margin-bottom: 1em;
     font-family: 'Audiowide', cursive;
     font-size: 3em;
+}
+
+#newsletter-signup {
+    text-align: center;
+}
+
+#email-input {
+    width: 25em;
+    margin-top: .75em;
+    text-align: center;
+}
+
+.user-input-title {
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#contact-numbers {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.contact-email {
+    font-size: 1.5em;
 }
 
 /* >>>>>>>>> LEADERBOARD <<<<<<<<< */
