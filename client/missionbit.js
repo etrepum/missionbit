@@ -10,14 +10,21 @@ Template.navigation.events({
     Session.set("codeSchool", true);
     Session.set("divingIn", true);
     Session.set("showValues", false);
+    Session.set("showValues", false);
   },
   'mouseup #values, touchend #values': function () {
     Session.set("showValues", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
+    Session.set("showValues", false);
+  },
+  'mouseup #about, touchend #about': function () {
+    Session.set("aboutInfo", true);
+    Session.set("divingIn", true);
+    Session.set("codeSchool", false);
+    Session.set("showValues", false);
   }
 })
-
 
 Template.leaderboard.events({
   'click input.add': function () {

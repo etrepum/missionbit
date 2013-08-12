@@ -59,6 +59,25 @@ body {
     margin-top: 1em;
 }
 
+/* >>>>>>>>>> ABOUT <<<<<<<<<< */
+
+#about-row {
+    margin-top: 100px;
+}
+
+#bio-div {
+    margin-top: 25px;
+}
+
+.team-bio {
+    margin-top: 0.5em;
+}
+
+.coach_title {
+    font-style: italic;
+    color: darkslategray;
+}
+
 .player {
     cursor: pointer;
     padding: 5px;
