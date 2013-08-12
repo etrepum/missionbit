@@ -1,4 +1,32 @@
 
+
+Template.homeCarousel.insideClick = function () {
+  var clickCheck = Session.get("divingIn");
+  return clickCheck;
+}
+
+Template.navigation.events({
+  'mouseup #code-school, touchend #code-school': function () {
+    Session.set("codeSchool", true);
+    Session.set("divingIn", true);
+  },
+  'mouseup #values, touchend #values': function () {
+    Session.set("showValues", true);
+    Session.set("divingIn", true);
+  }
+})
+
+
+Template.leaderboard.events({
+  'click input.add': function () {
+    var new_player_name = document.getElementById("new_player_name").value;
+    Players.insert({name: new_player_name, score: 0});
+  }
+});
+
+
+// >>>>>>>>>> LEADERBOARD METHODS <<<<<<<<<<<<<< //
+
 Template.leaderboard.players = function () {
   return Players.find({}, {sort: {score: -1, name: 1}});
 };
@@ -12,6 +40,16 @@ Template.player.selected = function () {
   return Session.equals("selected_player", this._id) ? "selected" : '';
 };
 
+Template.player.events({
+  // 'click': function () {
+  //   Session.set("selected_player", this._id);
+  // }
+  'click .vote-trigger': function () {
+    Session.set("selected_player", this._id);
+    Players.update(Session.get("selected_player"), {$inc: {score: 5}});
+  }
+});
+
 // Template.leaderboard.events({
 //   'click input.inc': function () {
 //     Players.update(Session.get("selected_player"), {$inc: {score: 5}});
@@ -23,35 +61,6 @@ Template.player.selected = function () {
 //     Players.update(Session.get("selected_player"), {$inc: {score: -3}});
 //   }
 // });
-
-Template.homeCarousel.insideClick = function () {
-  var clickCheck = Session.get("divingIn");
-  return clickCheck;
-}
-
-Template.navigation.events({
-  'mouseup #code-school, touchend #code-school': function () {
-    Session.set("codeSchool", true);
-    Session.set("divingIn", true);
-  }
-})
-
-Template.leaderboard.events({
-  'click input.add': function () {
-    var new_player_name = document.getElementById("new_player_name").value;
-    Players.insert({name: new_player_name, score: 0});
-  }
-});
-
-Template.player.events({
-  // 'click': function () {
-  //   Session.set("selected_player", this._id);
-  // }
-  'click .vote-trigger': function () {
-    Session.set("selected_player", this._id);
-    Players.update(Session.get("selected_player"), {$inc: {score: 5}});
-  }
-});
 
 
 

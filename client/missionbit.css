@@ -24,6 +24,33 @@ body {
     font-family: 'Expletus Sans', cursive;
 }
 
+.value-caption {
+    background-color: #000000;
+    position: static;
+    padding: 20px 20px 30px 20px;
+    margin-top: 100px;
+    border-radius: 20px;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.value-caption h1 {
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+    padding-top: .5em;
+}
+
+#second-caption-values,
+#third-caption-values,
+#fourth-caption-values,
+#fifth-caption-values,
+#sixth-caption-values {
+    margin-top: 1em;
+}
+
 .player {
     cursor: pointer;
     padding: 5px;
