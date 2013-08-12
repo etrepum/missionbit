@@ -62,7 +62,7 @@ body {
 /* >>>>>>>>>> ABOUT <<<<<<<<<< */
 
 #about-row {
-    margin-top: 100px;
+    margin-top: 115px;
 }
 
 #bio-div {
@@ -77,6 +77,68 @@ body {
     font-style: italic;
     color: darkslategray;
 }
+
+#team-members-area {
+/*    background-color: peachpuff;*/
+}
+
+#contact-us-details {
+    background-color: peachpuff;
+}
+
+.sub-caption-about {
+    font-family: 'Expletus Sans', cursive;
+    color: white;
+}
+
+.call-action {
+    text-align: center;
+    background-color: black;
+    text-align: center;
+    font-size: 3em;
+    height: 1.10em;
+    padding-top: 0.6em;
+    border-radius: .15em;
+}
+
+#general-info {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#EMI-link {
+    color: darkslategray;
+}
+
+#EMI-link:hover {
+    color: silver;
+}
+
+.brand-text {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.5em;
+}
+
+#pre-foot-buffer {
+    margin-bottom: 4em;
+}
+
+.img-circle {
+    border: 2px solid orange;
+}
+
+#img-div-title {
+    width: 60em;
+}
+
+.about-titles {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Audiowide', cursive;
+    font-size: 3em;
+}
+
+/* >>>>>>>>> LEADERBOARD <<<<<<<<< */
 
 .player {
     cursor: pointer;
