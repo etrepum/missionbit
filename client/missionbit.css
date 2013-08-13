@@ -159,7 +159,7 @@ body {
 }
 
 #email-teach-input {
-    margin-bottom: 8em;
+    margin-bottom: 2em;
 }
 
 #teach-input {
@@ -173,6 +173,16 @@ body {
 
 #teach-input:hover {
     background-color: orange;
+}
+
+#teach-email-confirm {
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#teach-input-confirm-msg {
+    margin-bottom: 8em;
+    text-align: center;
 }
 
 /* >>>>>>>>>> CODE SCHOOL <<<<<<<<<< */
