@@ -1,4 +1,17 @@
 
+/*
+
+BRAND COLORS
+
+Orange RGB:  251, 139, 0;  HEX:  #FB8B00; CMYK: 0, 45, 100, 2
+Purple RGB: 220, 19, 156;  HEX: #DC139C;  CMYK: 0, 91, 29, 14
+Blue RGB: 1, 105, 201;  HEX: #0169C9; CMYK: 100, 48, 0, 21
+
+
+*/
+
+
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 200;
@@ -9,6 +22,7 @@ body {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    background-color: silver;
 }
 
 /* >>>>>>>>> NAV <<<<<<<<<<< */
@@ -52,7 +66,7 @@ body {
 }
 
 #user-pledge-count {
-    color: darkslategray;
+    color: rgba(220, 19, 156, .75);
     font-family: 'Racing Sans One', cursive;
     font-size: 2em;
     padding: 0 .2em 0 .25em;
@@ -80,7 +94,7 @@ body {
 
 .pledge-submit-button {
     vertical-align: bottom;
-    background-color: silver;
+    background-color: rgba(220, 19, 156, .75);
     color: white;
     font-size: 1.5em;
 }
@@ -198,6 +212,79 @@ body {
     font-size: 1.5em;
 }
 
+#donate-action-div {
+  position: static;
+  margin-top: 150px;
+  color: white;
+  padding-left: 7em;
+  font-family: 'Expletus Sans', cursive;
+}
+
+#volunteer-action-div {
+  position: static;
+  margin-top: 2em;
+  color: white;
+  padding-left: 7em;
+  font-family: 'Expletus Sans', cursive;
+}
+
+#learn-action-div {
+  position: static;
+  margin-top: 2em;
+  color: white;
+  padding-left: 7em;
+  font-family: 'Expletus Sans', cursive;
+}
+
+#donate-action {
+  background-color: rgba(251, 139, 0, 1);
+  text-align: center;
+  font-size: 3em;
+  height: 1.10em;
+  padding-top: 0.6em;
+  border-radius: .15em;
+  color: black;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px;
+}
+
+#volunteer-action {
+  background-color: rgba(251, 139, 0, 1);
+  text-align: center;
+  font-size: 3em;
+  height: 1.10em;
+  padding-top: 0.6em;
+  border-radius: .15em;
+  color: black;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px;
+}
+
+#learn-action {
+  background-color: rgba(251, 139, 0, 1);
+  text-align: center;
+  font-size: 3em;
+  height: 1.10em;
+  padding-top: 0.6em;
+  border-radius: .15em;
+  color: black;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px;
+}
+
+#learn-action:hover,
+#volunteer-action:hover,
+#donate-action:hover {
+    background-color: black;
+    color: rgba(251, 139, 0, 1);
+    border: 1px solid rgba(251, 139, 0, 1);
+    box-shadow: inset 1px 1px 2px;
+}
+
+.bullet {
+  float: right;
+}
+
 /* >>>>>>>>>> CODE SCHOOL <<<<<<<<<< */
 
 .philo-tenent {
@@ -211,16 +298,19 @@ body {
 }
 
 .value-caption {
-/*    background-color: #000000;*/
-    background-color: orange;
+/*    background-color: rgba(251, 139, 0, 1);*/
+/*    background-color: rgba(220, 19, 156, 1);*/
+    background-color: rgba(1, 105, 201, 1);
     position: static;
     padding: 20px 20px 30px 20px;
     margin-top: 100px;
     border-radius: 20px;
     line-height: 1.25;
 /*    color: #fff;*/
-    color: blue;
-    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    color: rgba(251, 139, 0, 1);
+/*    color: rgba(1, 105, 201, 1);*/
+    text-shadow: 0 1px 1px rgba(220, 19, 156, 1);
+    border: 1px solid rgba(220, 19, 156, 1);
 }
 
 .value-caption h1 {
@@ -273,12 +363,22 @@ body {
 
 .call-action {
     text-align: center;
-    background-color: black;
+    background-color: rgba(251, 139, 0, 1);
     text-align: center;
     font-size: 3em;
     height: 1.10em;
     padding-top: 0.6em;
     border-radius: .15em;
+    color: black;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px;
+}
+
+.call-action:hover {
+    background-color: black;
+    color: rgba(251, 139, 0, 1);
+    border: 1px solid rgba(251, 139, 0, 1);
+    box-shadow: inset 1px 1px 2px;
 }
 
 #general-info {
@@ -323,10 +423,25 @@ body {
 }
 
 #email-input {
-    width: 25em;
+    width: 13em;
     margin-top: .75em;
     text-align: center;
+    font-family: 'Racing Sans One', cursive;
+    height: 2em;
+    font-size: 1.5em;
+    padding-top: .25em;
 }
+
+#email-input:hover {
+/*  background-color: rgba(251, 139, 0, 1);*/
+  background-color: rgba(220, 19, 156,1);
+  color: white;
+  border: 1px solid white;
+}
+
+/*#email-user-input .user-input {
+  color: white;
+}*/
 
 .user-input-title {
     font-family: 'Audiowide', cursive;

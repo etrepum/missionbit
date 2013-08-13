@@ -46,6 +46,7 @@ Template.navigation.events({
     Session.set("aboutInfo", false);
     Session.set("donate", false);
     Session.set("teach", false);
+    Session.set("learn", false);
   },
   'mouseup #values, touchend #values': function () {
     Session.set("showValues", true);
@@ -54,6 +55,7 @@ Template.navigation.events({
     Session.set("aboutInfo", false);
     Session.set("donate", false);
     Session.set("teach", false);
+    Session.set("learn", false);
   },
   'mouseup #about, touchend #about': function () {
     Session.set("aboutInfo", true);
@@ -62,6 +64,16 @@ Template.navigation.events({
     Session.set("showValues", false);
     Session.set("donate", false);
     Session.set("teach", false);
+    Session.set("learn", false);
+  },
+  'mouseup #nav-brand, touchend #nav-brand': function () {
+    Session.set("aboutInfo", false);
+    Session.set("divingIn", false);
+    Session.set("codeSchool", false);
+    Session.set("showValues", false);
+    Session.set("donate", false);
+    Session.set("teach", false);
+    Session.set("learn", false);
   }
 })
 
