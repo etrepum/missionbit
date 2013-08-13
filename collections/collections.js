@@ -7,3 +7,5 @@ Pledges = new Meteor.Collection("pledges");
 
 Teachers = new Meteor.Collection("teachers");
 
+Students = new Meteor.Collection("studnets");
+

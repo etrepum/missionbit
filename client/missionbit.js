@@ -14,6 +14,7 @@ Template.actionButtons.events({
     Session.set("aboutInfo", false)
     Session.set("codeSchool", false);
     Session.set("teach", false);
+    Session.set("learn", false);
   },
   'mouseup #volunteer-action, touchend #volunteer-action': function () {
     Session.set("teach", true);
@@ -23,6 +24,17 @@ Template.actionButtons.events({
     Session.set("aboutInfo", false)
     Session.set("codeSchool", false);
     Session.set("donate", false);
+    Session.set("learn", false);
+  },
+  'mouseup #learn-action, touchend #learn-action': function () {
+    Session.set("learn", true);
+    Session.set("divingIn", true);
+    Session.set("pledgeReady", true)
+    Session.set("showValues", false);
+    Session.set("aboutInfo", false)
+    Session.set("codeSchool", false);
+    Session.set("donate", false);
+    Session.set("teach", false);
   }
 })
 

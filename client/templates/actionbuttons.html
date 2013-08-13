@@ -28,3 +28,18 @@
     </div>
   {{/if}}
 </template>
+
+<template name="letsLearn">
+  {{#if toLearn}}
+    <div id="volunteer-learn-row" class="row">
+      <div id="volunteer-learn-div" class="span12 volunteer-learn">
+          <span id="learn-input-msg" class="span11 learn-input-title"> <p> Please enter your email to receive details regarding the curriculum and class schedule </p> </span>
+          <span id="email-learn-input" class="span11 learn-input">
+            <input id="learn-input" class="span11 learn-contact-info" type="email" placeholder="Enter Email Here" autofocus />
+          </span>
+      </div>
+      <div id="learn-input-confirm-msg" class="span12">
+      </div>
+    </div>
+  {{/if}}
+</template>

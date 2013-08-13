@@ -143,26 +143,31 @@ body {
 
 /* >>>>>>>>>> TEACH <<<<<<<<<< */
 
-#volunteer-teach-row {
+#volunteer-teach-row,
+#volunteer-learn-row {
     margin-top: 9em;
 }
 
-#volunteer-teach-div {
+#volunteer-teach-div,
+#volunteer-learn-div {
     text-align: center;
 }
 
-#teach-input-msg p {
+#teach-input-msg p,
+#learn-input-msg p {
     margin-bottom: 1em;
     font-size: 3em;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1em
 }
 
-#email-teach-input {
+#email-teach-input,
+#email-learn-input {
     margin-bottom: 2em;
 }
 
-#teach-input {
+#teach-input,
+#learn-input {
     height: 2em;
     text-align: center;
     font-size: 2em;
@@ -171,18 +176,26 @@ body {
     color: black;
 }
 
-#teach-input:hover {
+#teach-input:hover,
+#learn-input:hover {
     background-color: orange;
 }
 
-#teach-email-confirm {
+#teach-email-confirm,
+#learn-email-confirm {
     font-size: 2em;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#teach-input-confirm-msg {
+#teach-input-confirm-msg,
+#learn-input-confirm-msg {
     margin-bottom: 8em;
     text-align: center;
+}
+
+.input-output {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 /* >>>>>>>>>> CODE SCHOOL <<<<<<<<<< */
