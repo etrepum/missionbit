@@ -13,6 +13,16 @@ Template.actionButtons.events({
     Session.set("showValues", false);
     Session.set("aboutInfo", false)
     Session.set("codeSchool", false);
+    Session.set("teach", false);
+  },
+  'mouseup #volunteer-action, touchend #volunteer-action': function () {
+    Session.set("teach", true);
+    Session.set("divingIn", true);
+    Session.set("pledgeReady", true)
+    Session.set("showValues", false);
+    Session.set("aboutInfo", false)
+    Session.set("codeSchool", false);
+    Session.set("donate", false);
   }
 })
 
@@ -23,6 +33,7 @@ Template.navigation.events({
     Session.set("showValues", false);
     Session.set("aboutInfo", false);
     Session.set("donate", false);
+    Session.set("teach", false);
   },
   'mouseup #values, touchend #values': function () {
     Session.set("showValues", true);
@@ -30,6 +41,7 @@ Template.navigation.events({
     Session.set("codeSchool", false);
     Session.set("aboutInfo", false);
     Session.set("donate", false);
+    Session.set("teach", false);
   },
   'mouseup #about, touchend #about': function () {
     Session.set("aboutInfo", true);
@@ -37,6 +49,7 @@ Template.navigation.events({
     Session.set("codeSchool", false);
     Session.set("showValues", false);
     Session.set("donate", false);
+    Session.set("teach", false);
   }
 })
 

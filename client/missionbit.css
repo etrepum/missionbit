@@ -141,6 +141,40 @@ body {
     font-family: 'Audiowide', cursive;
 }
 
+/* >>>>>>>>>> TEACH <<<<<<<<<< */
+
+#volunteer-teach-row {
+    margin-top: 9em;
+}
+
+#volunteer-teach-div {
+    text-align: center;
+}
+
+#teach-input-msg p {
+    margin-bottom: 1em;
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1em
+}
+
+#email-teach-input {
+    margin-bottom: 8em;
+}
+
+#teach-input {
+    height: 2em;
+    text-align: center;
+    font-size: 2em;
+    padding-top: .5em;
+    font-family: 'Racing Sans One', cursive;
+    color: black;
+}
+
+#teach-input:hover {
+    background-color: orange;
+}
+
 /* >>>>>>>>>> CODE SCHOOL <<<<<<<<<< */
 
 .philo-tenent {
