@@ -20,12 +20,24 @@ body {
 
 /* >>>>>>>>> DONATE <<<<<<<<<<< */
 
+#pledge-marketing-row {
+    margin-top: 7em;
+}
+
+#pledge-marketing-div {
+    text-align: center;
+}
+
 #lets-donate-row {
-    margin-top: 100px;
+    margin-top: 1em;
 }
 
 #donate-pledge-call {
-    background-color: peachpuff;
+/*    background-color: peachpuff;*/
+}
+
+#pledge-amount-row {
+/*    margin-top: 3em;*/
 }
 
 .pledge-amount-input {
@@ -34,7 +46,7 @@ body {
 
 .pledge-submit-button {
     vertical-align: bottom;
-    background-color: blue;
+    background-color: silver;
     color: white;
     font-size: 1.5em;
 }
@@ -45,16 +57,54 @@ body {
     vertical-align: bottom;
 }
 
+#donate-pledge-input-div {
+    margin-top: 3em;
+    text-align: center;
+}
+
 #pledge-amount-row {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 #donate-pledge-25 {
-    background-color: peachpuff;
 }
 
 .pledge-submit {
 /*    background-color: peachpuff;*/
+}
+
+#pledge-submit-row {
+    margin-top: 1em;
+    margin-bottom: 16em;
+}
+
+#pledge-submit-div {
+    text-align: center;
+}
+
+#donate-pledge-submit {
+    width: 25em;
+}
+
+#pledge-details-row {
+    margin-top: 3em;
+}
+
+#pledge-details-div {
+    vertical-align: middle;
+}
+
+#pledge-grand-total-title {
+    margin-top: 0.25em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+#pledge-grand-total-amount {
+    font-size: 6em;
+/*    font-family: 'Racing Sans One', cursive;*/
+    font-family: 'Audiowide', cursive;
 }
 
 /* >>>>>>>>>> CODE SCHOOL <<<<<<<<<< */

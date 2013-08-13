@@ -2,11 +2,38 @@
 <template name="letsDonate">
   {{#if toDonate}}
 
-  <div id="lets-donate-row" class="row">
-    <div id="lets-donate-div" class="donate">
-      <div id="donate-pledge-call" class="span3 pull-left">
-        <h1> Make a pledge </h1>
+  {{#unless alreadyPledged}}
+  <div id="pledge-marketing-row" class="row">
+    <div id="pledge-marketing-div" class="span12 donate-marketing">
+      <div id="pledge-marketing-text" class="marketing-text">
+        <span class="pledge-marketing">
+          <h3> Mission Bit is raising funds to hire an Executive Director </h3>
+          <h3> 100% of funds raised are allocated to direct Mission Bit operating expenses. The board members volunteer their time. </h3>
+          <h3> By making a pledge, you are not committing to donate money to Mission Bit. It is simply an indicator of your support.* </h3>
+        </span>
       </div>
+    </div>
+  </div> <!-- ROW -->
+  {{/unless}}
+
+<!--   <div id="lets-donate-row" class="row">
+    <div id="lets-donate-div" class="donate">
+      <div id="donate-pledge-call" class="donate-pledge">
+        <span class="span3 pull-left pledge-call">
+          <h1> Make a pledge </h1>
+        </span>
+      </div>
+    </div>
+  </div> --> <!-- ROW -->
+
+  <div id="pledge-details-row" class="row">
+    <div id="pledge-details-div" class="details-div">
+      <span class="span7 pull-left pledge-totals">
+        <h1 id="pledge-grand-total-amount" class="pull-right pledge-total"> ${{totalPledges}} </h1>
+      </span>
+      <span class="span5 pull-right pledge-totals">
+        <h3 id="pledge-grand-total-title" class="pull-left pledge-total-title"> Total Pledges </h3>
+      </span>
     </div>
   </div> <!-- ROW -->
 
@@ -44,20 +71,17 @@
 
   <div id="pledge-submit-row" class="row">
     <div id="pledge-submit-div" class="submit-div">
-      <span class="span3 pledge-submit">
-        <input id="donate-pledge-submit" class="pledge-submit-button" type="submit" value="Make Pledge">
+      <span class="span12 pledge-submit">
+        <input id="donate-pledge-submit" class="pledge-submit-button" type="submit" value="Submit Pledge">
       </span>
     </div>
   </div> <!-- ROW -->
 
-  <div id="pledge-details-row" class="row">
-    <div id="pledge-details-div" class="details-div">
-      <span class="span12 pledge-totals">
-        <h3 id="pledge-grand-total-title" class="pledge-total-title"> Pledge Total </h3>
-      </span>
-      <span class="span12 pledge-totals">
-        <h1 id="pledge-grand-total-amount" class="pledge-total"> {{totalPledges}} </h1>
-      </span>
+  <div id="footnotes-row" class="row">
+    <div id="footnotes-div" class="span12 footnotes">
+        <span id="footnotes-text" class="pull-left footnotes-text">
+          <p> * A Mission Bit board member or other representative will contact you to discuss a formal donation </p>
+        </span>
     </div>
   </div> <!-- ROW -->
 
