@@ -3,18 +3,29 @@
   {{#if toDonate}}
 
   {{#unless alreadyPledged}}
-  <div id="pledge-marketing-row" class="row">
-    <div id="pledge-marketing-div" class="span12 donate-marketing">
-      <div id="pledge-marketing-text" class="marketing-text">
-        <span class="pledge-marketing">
-          <h3> Mission Bit is raising funds to hire an Executive Director </h3>
-          <h3> 100% of funds raised are allocated to direct Mission Bit operating expenses. The board members volunteer their time. </h3>
-          <h3> By making a pledge, you are not committing to donate money to Mission Bit. It is simply an indicator of your support.* </h3>
-        </span>
+    <div id="pledge-marketing-row" class="row">
+      <div id="pledge-marketing-div" class="span12 donate-marketing">
+        <div id="pledge-marketing-text" class="marketing-text">
+          <span class="pledge-marketing">
+            <h3> Mission Bit is raising funds to hire an Executive Director </h3>
+            <h3> 100% of funds raised are allocated to direct Mission Bit operating expenses. The board members volunteer their time. </h3>
+            <h3> By making a pledge, you are not committing to donate money to Mission Bit. It is simply an indicator of your support.* </h3>
+          </span>
+        </div>
       </div>
-    </div>
-  </div> <!-- ROW -->
+    </div> <!-- ROW -->
   {{/unless}}
+
+  {{#if alreadyPledged}}
+    <div id="acknowledge-pledge-row" class="row">
+      <div id="acknowledge-pledge-div" class="pledge-note">
+        <span id="pledge-thanks" class="span3 pull-left pledge-notes"> <h1 class="pull-right pledge-text"> Thank You! </h1> </span>
+        <span id="total-pledge-msg" class="span3 pull-left pledge-notes"> <h3 class="pull-right pledge-text"> You've pledged a total of </h3> </span>
+        <span id="user-pledge-total" class="span2 pull-left pledge-notes"> <h1 class="pledge-text"> ${{userPledgeTotal}} </h1></span>
+        <span id="pledge-number" class="span3 pull-left pledge-notes"> <h3 class="pull-left pledge-text"> with <span id="user-pledge-count" class="pledge-text"> {{pledgeNumber}} </span> pledges </h3> </span>
+      </div>
+    </donateiv> <!-- ROW -->
+  {{/if}}
 
 <!--   <div id="lets-donate-row" class="row">
     <div id="lets-donate-div" class="donate">
@@ -72,7 +83,7 @@
   <div id="pledge-submit-row" class="row">
     <div id="pledge-submit-div" class="submit-div">
       <span class="span12 pledge-submit">
-        <input id="donate-pledge-submit" class="pledge-submit-button" type="submit" value="Submit Pledge">
+        <input id="donate-pledge-submit" class="pledge-submit-button" type="submit" value="Make Pledge">
       </span>
     </div>
   </div> <!-- ROW -->

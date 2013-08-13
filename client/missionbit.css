@@ -20,12 +20,42 @@ body {
 
 /* >>>>>>>>> DONATE <<<<<<<<<<< */
 
-#pledge-marketing-row {
+#pledge-marketing-row,
+#acknowledge-pledge-row {
     margin-top: 7em;
 }
 
-#pledge-marketing-div {
+#pledge-marketing-div,
+#acknowledge-pledge-div {
     text-align: center;
+}
+
+#acknowledge-pledge-div {
+    vertical-align: middle;
+}
+
+#acknowledge-pledge-row {
+    margin-bottom: 2em;
+}
+
+#total-pledge-msg {
+    padding-top: 0.50em;
+}
+
+#user-pledge-total {
+    text-align: center;
+}
+
+#user-pledge-total h1 {
+    font-size: 3em;
+    font-family: 'Audiowide', cursive;
+}
+
+#user-pledge-count {
+    color: darkslategray;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2em;
+    padding: 0 .2em 0 .25em;
 }
 
 #lets-donate-row {
@@ -38,6 +68,10 @@ body {
 
 #pledge-amount-row {
 /*    margin-top: 3em;*/
+}
+
+.pledge-text {
+
 }
 
 .pledge-amount-input {
@@ -87,7 +121,7 @@ body {
 }
 
 #pledge-details-row {
-    margin-top: 3em;
+    margin-top: 8em;
 }
 
 #pledge-details-div {

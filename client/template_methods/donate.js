@@ -9,16 +9,52 @@ Template.letsDonate.pledgeReady = function () {
   return pledgeReady;
 }
 
+Template.letsDonate.alreadyPledged = function () {
+  var thisUser = Meteor.userId();
+  if(thisUser == null) {
+    return false;
+  }
+  if(thisUser) {
+    var pledgeCheck = Pledges.find({donor: thisUser}).fetch();
+    console.log(pledgeCheck);
+    if(pledgeCheck[0]){
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+Template.letsDonate.pledgeNumber = function () {
+  var thisUser = Meteor.userId();
+  var pledgeNumberCheck = Pledges.find({donor: thisUser}).count();
+  console.log(pledgeNumberCheck);
+  return pledgeNumberCheck;
+}
+
+Template.letsDonate.userPledgeTotal = function () {
+  var thisUser = Meteor.userId();
+  var userPledges = Pledges.find({donor: thisUser}).fetch();
+  if (userPledges[0]) {
+    var pledgeTotal = 0;
+    var pledgeArray = _.map(userPledges, function (pledge){
+      var theValue = pledge['value'];
+      var thisPledge = parseInt(theValue);
+      pledgeTotal = pledgeTotal + thisPledge;
+      return theValue;
+    })
+  return pledgeTotal;
+  }
+}
+
 Template.letsDonate.totalPledges = function () {
   var totalPledges = Pledges.find({}).fetch();
   if (totalPledges[0]) {
-    console.log(totalPledges);
     var pledgeTotal = 0;
     var pledgeArray = _.map(totalPledges, function (pledge){
       var theValue = pledge['value'];
       var thisPledge = parseInt(theValue);
       pledgeTotal = pledgeTotal + thisPledge;
-      console.log(pledgeTotal);
       return theValue;
     })
   return pledgeTotal;
