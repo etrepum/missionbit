@@ -9,7 +9,7 @@ Template.aboutInfo.events({
     if (event.which == 13) {
       event.preventDefault();
       var thisEmail = document.getElementById("email-input").value;
-      Emails.insert({
+      Newsletters.insert({
         email: thisEmail
       })
       $('#email-input').remove();

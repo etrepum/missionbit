@@ -1,7 +1,9 @@
 
 Players = new Meteor.Collection("players");
 
-Emails = new Meteor.Collection("emails");
+Newletters = new Meteor.Collection("newsletters");
 
 Pledges = new Meteor.Collection("pledges");
+
+Teachers = new Meteor.Collection("teachers");
 
