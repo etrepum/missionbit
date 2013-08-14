@@ -88,13 +88,15 @@
     </div>
   </div> <!-- ROW -->
 
-  <div id="footnotes-row" class="row">
-    <div id="footnotes-div" class="span12 footnotes">
-        <span id="footnotes-text" class="pull-left footnotes-text">
-          <p> * A Mission Bit board member or other representative will contact you to discuss a formal donation </p>
-        </span>
-    </div>
-  </div> <!-- ROW -->
+  {{#unless alreadyPledged}}
+    <div id="footnotes-row" class="row">
+      <div id="footnotes-div" class="span12 footnotes">
+          <span id="footnotes-text" class="pull-left footnotes-text">
+            <p> * A Mission Bit board member or other representative will contact you to discuss a formal donation </p>
+          </span>
+      </div>
+    </div> <!-- ROW -->
+  {{/unless}}
 
   {{/if}}
 </template>

@@ -23,6 +23,7 @@ body {
     -o-user-select: none;
     user-select: none;
     background-color: silver;
+    background-color: rgba(192, 192, 192, 0.5)
 }
 
 /* >>>>>>>>> NAV <<<<<<<<<<< */
@@ -30,6 +31,12 @@ body {
 #missionbit-logo-nav {
     width: 50px;
     height: 50px;
+}
+
+#login {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  margin-top: .75em;
 }
 
 /* >>>>>>>>> DONATE <<<<<<<<<<< */
@@ -94,9 +101,16 @@ body {
 
 .pledge-submit-button {
     vertical-align: bottom;
-    background-color: rgba(220, 19, 156, .75);
+    background-color: rgba(220, 19, 156, 1);
     color: white;
     font-size: 1.5em;
+    border: 1px solid white;
+}
+
+.pledge-submit-button:hover {
+  background-color: white;
+  color: rgba(220, 19, 156, 1);
+  border: 1px solid rgba(220, 19, 156, 1);
 }
 
 .pledge-amount-text {

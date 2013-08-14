@@ -18,3 +18,36 @@ Template.aboutInfo.events({
   }
 })
 
+Template.aboutInfo.events({
+  'mouseup #donate-about, touchend #donate-about': function () {
+    Session.set("donate", true);
+    Session.set("divingIn", true);
+    Session.set("pledgeReady", true)
+    Session.set("showValues", false);
+    Session.set("aboutInfo", false)
+    Session.set("codeSchool", false);
+    Session.set("teach", false);
+    Session.set("learn", false);
+  },
+  'mouseup #volunteer-about, touchend #volunteer-about': function () {
+    Session.set("teach", true);
+    Session.set("divingIn", true);
+    Session.set("pledgeReady", true)
+    Session.set("showValues", false);
+    Session.set("aboutInfo", false)
+    Session.set("codeSchool", false);
+    Session.set("donate", false);
+    Session.set("learn", false);
+  },
+  'mouseup #learn-about, touchend #learn-about': function () {
+    Session.set("learn", true);
+    Session.set("divingIn", true);
+    Session.set("pledgeReady", true)
+    Session.set("showValues", false);
+    Session.set("aboutInfo", false)
+    Session.set("codeSchool", false);
+    Session.set("donate", false);
+    Session.set("teach", false);
+  }
+})
+
