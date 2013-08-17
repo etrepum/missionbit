@@ -64,6 +64,7 @@ Template.letsDonate.totalPledges = function () {
 
 Template.letsDonate.events({
   'click #donate-pledge-submit': function (event) {
+    mixpanel.track("Pledge Made");
     event.preventDefault();
     if (Meteor.userId() == null) {
       document.forms["pledge-form"].reset();

@@ -6,6 +6,7 @@ Template.letsLearn.toLearn = function () {
 
 Template.letsLearn.events({
   'keypress #learn-input': function (event) {
+    mixpanel.track("Learn Email");
     if (event.which == 13) {
       event.preventDefault();
       var thisEmail = document.getElementById("learn-input").value;

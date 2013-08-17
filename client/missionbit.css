@@ -22,8 +22,15 @@ body {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-    background-color: silver;
-    background-color: rgba(192, 192, 192, 0.5)
+/*    background-color: silver;*/
+/*    background-color: rgba(192, 192, 192, 0.5);*/
+    background-image: url('http://download.ultradownloads.com.br/wallpaper/130270_Papel-de-Parede-Estilo-Matrix_1680x1050.jpg');
+    background-size: 120% auto;
+}
+
+#mission-bit-div-container {
+  background-color: rgba(255,255,255,.25);
+  height: 2000px;
 }
 
 /* >>>>>>>>> NAV <<<<<<<<<<< */
@@ -40,6 +47,26 @@ body {
 }
 
 /* >>>>>>>>> DONATE <<<<<<<<<<< */
+
+#pledge-marketing-text {
+  background-color: rgba(0,0,0,.75);
+  padding: 1em;
+  border-radius: .5em;
+  color: white;
+}
+
+.pledge-totals {
+  color: white;
+}
+
+.pledge-input {
+/*  color: white;*/
+  color: rgba(251, 139, 0, 1);
+  background-color: rgba(0,0,0,.5);
+  height: 4em;
+  padding-top: 2em;
+  border-radius: .5em;
+}
 
 #pledge-marketing-row,
 #acknowledge-pledge-row {
@@ -167,7 +194,12 @@ body {
     font-size: 6em;
 /*    font-family: 'Racing Sans One', cursive;*/
     font-family: 'Audiowide', cursive;
+    color: rgba(1, 105, 201, 1);
 }
+
+/*#grand-total-pledge-span {
+  background-color: rgba(255,255,255,.5);
+}*/
 
 /* >>>>>>>>>> TEACH <<<<<<<<<< */
 
@@ -320,11 +352,11 @@ body {
     margin-top: 100px;
     border-radius: 20px;
     line-height: 1.25;
-/*    color: #fff;*/
-    color: rgba(251, 139, 0, 1);
+    color: #fff;
+    /*color: rgba(251, 139, 0, 1);*/
 /*    color: rgba(1, 105, 201, 1);*/
-    text-shadow: 0 1px 1px rgba(220, 19, 156, 1);
-    border: 1px solid rgba(220, 19, 156, 1);
+    text-shadow: 1px 1px 1px rgba(220, 19, 156, 1);
+    border: .25em solid rgba(251, 139, 0, 1);
 }
 
 .value-caption h1 {
@@ -345,6 +377,16 @@ body {
 
 /* >>>>>>>>>> ABOUT <<<<<<<<<< */
 
+.team-member-bio {
+  background-color: rgba(0,0,0,.75);
+  padding: 1em;
+  border-radius: .5em;
+}
+
+#about-container {
+  color: white;
+}
+
 #about-row {
     margin-top: 115px;
 }
@@ -359,7 +401,8 @@ body {
 
 .coach_title {
     font-style: italic;
-    color: darkslategray;
+ /*   color: darkslategray;*/
+    color: rgba(220, 19, 156, 1);
 }
 
 #team-members-area {
@@ -401,7 +444,8 @@ body {
 }
 
 #EMI-link {
-    color: darkslategray;
+  color: rgba(220, 19, 156, 1);
+/*  color: darkslategray;*/
 }
 
 #EMI-link:hover {

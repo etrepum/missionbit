@@ -7,6 +7,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
 <!--   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="/public/img/missionbit.ico">
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/style.carousel.css" rel="stylesheet">
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
@@ -20,21 +21,26 @@
   <link href='http://fonts.googleapis.com/css?family=Stalinist+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]); b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]); mixpanel.init("b811e63c8f37e092644a621a229ad612");</script>
+  <!-- end Mixpanel -->
 
 </head>
 
 <body>
-  <div id="mission-bit" class="container">
-    {{> navigation}}
-    {{> homeCarousel}}
-    {{> leaderboard}}
-    {{> codeSchool}}
-    {{> showValues}}
-    {{> aboutInfo}}
-    {{> letsDonate}}
-    {{> letsTeach}}
-    {{> letsLearn}}
-    {{> footer}}
+  <div id="mission-bit-div-container">
+    <div id="mission-bit" class="container">
+      {{> navigation}}
+      {{> homeCarousel}}
+      {{> leaderboard}}
+      {{> codeSchool}}
+      {{> showValues}}
+      {{> aboutInfo}}
+      {{> letsDonate}}
+      {{> letsTeach}}
+      {{> letsLearn}}
+      {{> footer}}
+    </div>
   </div>
   <script src="bootstrap/js/bootstrap-carousel.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
@@ -73,41 +79,42 @@
 </template>
 
 <template name="homeCarousel">
-  {{#unless insideClick}}
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-  <!--         <img src="http://i852.photobucket.com/albums/ab89/gigmania/missionbit_logo_horizontal.png" alt=""> -->
-          <div class="container">
-            <div id="first-caption" class="span5 carousel-caption primary">
-              <h1>Teaching Mission Kids to Code </h1>
-              <span id="first-bullet" class="pull-right caption-bullet lead bullet"> Free computer programming classes </span>
-              </br>
-              <span id="second-bullet" class="pull-right caption-bullet lead bullet"> Daily after school lessons and projects </span>
-              </br>
-              <span id="third-bullet" class="pull-right caption-bullet lead bullet"> Flexible curriculm design </span>
-            </div> <!-- FIRST CAPTION -->
-            {{> actionButtons}}
-          </div> <!-- CONTAINER -->
+  {{siteEntry}}
+    {{#unless insideClick}}
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item active">
+    <!--         <img src="http://i852.photobucket.com/albums/ab89/gigmania/missionbit_logo_horizontal.png" alt=""> -->
+            <div class="container">
+              <div id="first-caption" class="span5 carousel-caption primary">
+                <h1>Teaching Mission Kids to Code </h1>
+                <span id="first-bullet" class="pull-right caption-bullet lead bullet"> Free computer programming classes </span>
+                </br>
+                <span id="second-bullet" class="pull-right caption-bullet lead bullet"> Daily after school lessons and projects </span>
+                </br>
+                <span id="third-bullet" class="pull-right caption-bullet lead bullet"> Flexible curriculm design </span>
+              </div> <!-- FIRST CAPTION -->
+              {{> actionButtons}}
+            </div> <!-- CONTAINER -->
+          </div>
+          <div class="item">
+            <div class="container">
+              <div id="second-caption" class="span5 carousel-caption secondary">
+                <h1> A place where Mission youth and tech entrepreneurs </h1>
+                <span id="first-bullet" class="pull-right caption-bullet lead bullet"> Inspire each other through ideas and execution </span>
+                </br>
+                <span id="second-bullet" class="pull-right caption-bullet lead bullet"> Learn from industry luminaries </span>
+                </br>
+                <span id="third-bullet" class="pull-right caption-bullet lead bullet"> Write code, launch products and build companies </span>
+              </div> <!-- FIRST CAPTION -->
+              {{> actionButtons}}
+            </div> <!-- CONTAINER -->
+          </div> <!-- ITEM -->
         </div>
-        <div class="item">
-          <div class="container">
-            <div id="second-caption" class="span5 carousel-caption secondary">
-              <h1> A place where Mission youth and tech entrepreneurs </h1>
-              <span id="first-bullet" class="pull-right caption-bullet lead bullet"> Inspire each other through ideas and execution </span>
-              </br>
-              <span id="second-bullet" class="pull-right caption-bullet lead bullet"> Learn from industry luminaries </span>
-              </br>
-              <span id="third-bullet" class="pull-right caption-bullet lead bullet"> Write code, launch products and build companies </span>
-            </div> <!-- FIRST CAPTION -->
-            {{> actionButtons}}
-          </div> <!-- CONTAINER -->
-        </div> <!-- ITEM -->
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-  {{/unless}}
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div><!-- /.carousel -->
+    {{/unless}}
 </template>
 
 <template name="footer">
@@ -124,14 +131,7 @@
     {{#unless selected_name}}
       <div class="none">Click a tagline to select</div>
     {{/unless}}
-  <!--   {{#if selected_name}}
-      <div class="row details">
-          <div class="span10 pull-left">
-            {{selected_name}}
-          </div>
-          <input type="button" class="inc pullright" value="Give 5 points" />
-      </div>
-    {{/if}} -->
+
     <div id="leaderboard-row" class="row">
         {{#each players}}
           {{> player}}

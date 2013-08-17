@@ -20,6 +20,7 @@ Template.aboutInfo.events({
 
 Template.aboutInfo.events({
   'mouseup #donate-about, touchend #donate-about': function () {
+    mixpanel.track("Donate Button");
     Session.set("donate", true);
     Session.set("divingIn", true);
     Session.set("pledgeReady", true)
@@ -30,6 +31,7 @@ Template.aboutInfo.events({
     Session.set("learn", false);
   },
   'mouseup #volunteer-about, touchend #volunteer-about': function () {
+    mixpanel.track("Volunteer Button");
     Session.set("teach", true);
     Session.set("divingIn", true);
     Session.set("pledgeReady", true)
@@ -40,6 +42,7 @@ Template.aboutInfo.events({
     Session.set("learn", false);
   },
   'mouseup #learn-about, touchend #learn-about': function () {
+    mixpanel.track("Learn Button");
     Session.set("learn", true);
     Session.set("divingIn", true);
     Session.set("pledgeReady", true)

@@ -5,8 +5,13 @@ Template.homeCarousel.insideClick = function () {
   return clickCheck;
 }
 
+Template.homeCarousel.siteEntry = function () {
+  mixpanel.track("Site Entry");
+}
+
 Template.actionButtons.events({
   'mouseup #donate-action, touchend #donate-action': function () {
+    mixpanel.track("Donate Button");
     Session.set("donate", true);
     Session.set("divingIn", true);
     Session.set("pledgeReady", true)
@@ -17,6 +22,7 @@ Template.actionButtons.events({
     Session.set("learn", false);
   },
   'mouseup #volunteer-action, touchend #volunteer-action': function () {
+    mixpanel.track("Volunteer Button");
     Session.set("teach", true);
     Session.set("divingIn", true);
     Session.set("pledgeReady", true)
@@ -27,6 +33,7 @@ Template.actionButtons.events({
     Session.set("learn", false);
   },
   'mouseup #learn-action, touchend #learn-action': function () {
+    mixpanel.track("Learn Button");
     Session.set("learn", true);
     Session.set("divingIn", true);
     Session.set("pledgeReady", true)
@@ -40,6 +47,7 @@ Template.actionButtons.events({
 
 Template.navigation.events({
   'mouseup #code-school, touchend #code-school': function () {
+    mixpanel.track("Code School Nav");
     Session.set("codeSchool", true);
     Session.set("divingIn", true);
     Session.set("showValues", false);
@@ -49,6 +57,7 @@ Template.navigation.events({
     Session.set("learn", false);
   },
   'mouseup #values, touchend #values': function () {
+    mixpanel.track("Values Nav");
     Session.set("showValues", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
@@ -58,6 +67,7 @@ Template.navigation.events({
     Session.set("learn", false);
   },
   'mouseup #about, touchend #about': function () {
+    mixpanel.track("About Nav");
     Session.set("aboutInfo", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
@@ -67,6 +77,7 @@ Template.navigation.events({
     Session.set("learn", false);
   },
   'mouseup #nav-brand, touchend #nav-brand': function () {
+    mixpanel.track("Brand Home Nav");
     Session.set("aboutInfo", false);
     Session.set("divingIn", false);
     Session.set("codeSchool", false);
