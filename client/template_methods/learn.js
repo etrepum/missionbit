@@ -16,7 +16,7 @@ Template.letsLearn.events({
       })
       $('#learn-input').remove();
       $('#email-learn-input').append('<input id="learn-input" class="span11 learn-contact-info" type="email" placeholder="Enter Email Here" autofocus />');
-      $('#learn-input-confirm-msg').append('<span id="learn-email-confirm" class="span11"> You will receive the requested information via <span class="input-output">'+ thisEmail +'</span> soon. </span>');
+      $('#learn-input-confirm-msg').append('<span id="learn-email-confirm" class="confirm-msg"> You will receive the requested information via <span class="input-output">'+ thisEmail +'</span> soon. </span>');
     }
   }
 })

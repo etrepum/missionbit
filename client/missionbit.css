@@ -238,6 +238,15 @@ body {
     text-align: center;
 }
 
+#teach-input-msg,
+#learn-input-msg {
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 2em;
+  color: white;
+  padding-top: 2em;
+  border-radius: 0.5em;
+}
+
 #teach-input-msg p,
 #learn-input-msg p {
     margin-bottom: 1em;
@@ -259,17 +268,24 @@ body {
     padding-top: .5em;
     font-family: 'Racing Sans One', cursive;
     color: black;
+    margin-bottom: 1em;
 }
 
 #teach-input:hover,
 #learn-input:hover {
-    background-color: orange;
+    background-color: rgba(220, 19, 156, 0.75);
+    border: 1px solid white;
 }
 
 #teach-email-confirm,
 #learn-email-confirm {
     font-size: 2em;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1em;
+    color: white;
+    border-radius: 0.5em;
+    margin-top: 2em;
 }
 
 #teach-input-confirm-msg,
@@ -281,6 +297,9 @@ body {
 .input-output {
     font-weight: bold;
     font-size: 1.5em;
+   /* color: rgba(1, 105, 201, 0.75);*/
+    color: rgba(220, 19, 156, 0.75);
+    text-shadow: 1px 1px orange;
 }
 
 #donate-action-div {
@@ -517,7 +536,7 @@ body {
 
 #email-input:hover {
 /*  background-color: rgba(251, 139, 0, 1);*/
-  background-color: rgba(220, 19, 156,1);
+  background-color: rgba(220, 19, 156, 0.5);
   color: white;
   border: 1px solid white;
 }

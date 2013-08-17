@@ -17,9 +17,9 @@
 <template name="letsTeach">
   {{#if toTeach}}
     <div id="volunteer-teach-row" class="row">
-      <div id="volunteer-teach-div" class="span12 volunteer-teach">
-          <span id="teach-input-msg" class="span11 teach-input-title"> <p> Please enter your email to receive details regarding voluteer teaching opportunities</p> </span>
-          <span id="email-teach-input" class="span11 teach-input">
+      <div id="volunteer-teach-div" class="volunteer-teach">
+          <span id="teach-input-msg" class="span12 teach-input-title"> <p> Please enter your email to receive details regarding voluteer teaching opportunities</p> </span>
+          <span id="email-teach-input" class="span12 teach-input">
             <input id="teach-input" class="span11 teach-contact-info" type="email" placeholder="Enter Email Here" autofocus />
           </span>
       </div>
@@ -32,13 +32,13 @@
 <template name="letsLearn">
   {{#if toLearn}}
     <div id="volunteer-learn-row" class="row">
-      <div id="volunteer-learn-div" class="span12 volunteer-learn">
-          <span id="learn-input-msg" class="span11 learn-input-title"> <p> Please enter your email to receive details regarding the curriculum and class schedule </p> </span>
-          <span id="email-learn-input" class="span11 learn-input">
+      <div id="volunteer-learn-div" class="volunteer-learn">
+          <span id="learn-input-msg" class="span12 learn-input-title"> <p> Please enter your email to receive details regarding the curriculum and class schedule </p> </span>
+          <span id="email-learn-input" class="span12 learn-input">
             <input id="learn-input" class="span11 learn-contact-info" type="email" placeholder="Enter Email Here" autofocus />
           </span>
       </div>
-      <div id="learn-input-confirm-msg" class="span12">
+      <div id="learn-input-confirm-msg" class="span12 confirm-msg-holder">
       </div>
     </div>
   {{/if}}
