@@ -55,6 +55,11 @@ body {
   color: white;
 }
 
+.pledge-input:hover {
+  color: rgba(0,0,0,.75);
+  background-color: rgba(251, 139, 0, 0.5);
+}
+
 .pledge-totals {
   color: white;
 }
@@ -80,10 +85,19 @@ body {
 
 #acknowledge-pledge-div {
     vertical-align: middle;
+    color: white;
+    text-shadow: 2px 2px orange;
 }
+
+.pledge-notes,
+.pledge-note {
+/*  background-color: rgba(0,0,0,1);*/
+}
+
 
 #acknowledge-pledge-row {
     margin-bottom: 2em;
+/*    background-color: rgba(0,0,0,1);*/
 }
 
 #total-pledge-msg {
@@ -97,6 +111,8 @@ body {
 #user-pledge-total h1 {
     font-size: 3em;
     font-family: 'Audiowide', cursive;
+    color: rgba(1, 105, 201, 1);
+    text-shadow: 2px 2px white;
 }
 
 #user-pledge-count {
@@ -195,6 +211,7 @@ body {
 /*    font-family: 'Racing Sans One', cursive;*/
     font-family: 'Audiowide', cursive;
     color: rgba(1, 105, 201, 1);
+    text-shadow: 2px 2px white;
 }
 
 /*#grand-total-pledge-span {
