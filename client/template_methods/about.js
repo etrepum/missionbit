@@ -14,6 +14,7 @@ Template.aboutInfo.events({
       })
       $('#email-input').remove();
       $('#email-user-input').append('<input id="email-input" class="user-contact-info" type="email" placeholder="Stay in the Loop" autofocus />');
+      $('#newsletter-signup').append('<div id="newsletter-confirm-output" class="row"><span id="newsletter-email-confirm" class="newsletter-confirm-msg"> You will receive updates via </br> <span class="newsletter-input-output">'+ thisEmail +'</span></span></div>');
     }
   }
 })
