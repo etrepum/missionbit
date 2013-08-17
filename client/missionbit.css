@@ -234,7 +234,8 @@ body {
 }
 
 #volunteer-teach-div,
-#volunteer-learn-div {
+#volunteer-learn-div,
+#values-email-div {
     text-align: center;
 }
 
@@ -247,8 +248,18 @@ body {
   border-radius: 0.5em;
 }
 
+#values-email-msg {
+  margin-top: 2em;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 1em;
+  color: white;
+  padding-top: 2em;
+  border-radius: 0.5em;
+}
+
 #teach-input-msg p,
-#learn-input-msg p {
+#learn-input-msg p,
+#values-email-msg p {
     margin-bottom: 1em;
     font-size: 3em;
     font-family: 'Josefin Sans', sans-serif;
@@ -261,7 +272,8 @@ body {
 }
 
 #teach-input,
-#learn-input {
+#learn-input,
+#values-input {
     height: 2em;
     text-align: center;
     font-size: 2em;
@@ -272,13 +284,15 @@ body {
 }
 
 #teach-input:hover,
-#learn-input:hover {
+#learn-input:hover,
+#values-input:hover {
     background-color: rgba(220, 19, 156, 0.75);
     border: 1px solid white;
 }
 
 #teach-email-confirm,
-#learn-email-confirm {
+#learn-email-confirm,
+#values-email-confirm {
     font-size: 2em;
     font-family: 'Josefin Sans', sans-serif;
     background-color: rgba(0,0,0,0.5);
@@ -289,7 +303,8 @@ body {
 }
 
 #teach-input-confirm-msg,
-#learn-input-confirm-msg {
+#learn-input-confirm-msg,
+#values-input-confirm-msg {
     margin-bottom: 8em;
     text-align: center;
 }
