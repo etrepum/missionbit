@@ -1,7 +1,7 @@
 
 Accounts.ui.config({
   requestPermissions: {
-    facebook: ['user_friends']
+    facebook: ['publish_actions']
   }
 });
 
