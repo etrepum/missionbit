@@ -54,9 +54,8 @@
 
 <template name="marketNav">
   <div id="tweet-the-bit" class="span3 pull-right tweet-button">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="missionbit" data-count="none">Tweet Mission Bit</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-    </script>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Mission Bit | Teaching Mission, SF kids to code!" data-via="missionbit" data-count="none">Tweet Mission Bit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
 </template>
 
@@ -130,12 +129,12 @@
 </template>
 
 <template name="footer">
-  <div id="footer-div" class="footer">
-    <div id="the-foot" class="footer-inside">
-<!--       <p id="yummy-trade" class="pull-leftm footer-span"> An <a href="http://www.eastmission.com"> East Mission Initiatives </a> Program </p> -->
-      <p id="reds-trade" class="pull-right footer-span">&copy; 2013 <a href="http://www.eastmission.com/"> East Mission Initiatives, 501(c)3</a></p>
+  <div id="footer-div" class="footer row">
+    <div id="the-foot" class="span12 footer-inside">
+      <span class="span4 pull-right">
+        <p id="reds-trade" class="pull-right footer-span">&copy; 2013 <a href="http://www.eastmission.com/"> East Mission Initiatives, 501(c)3</a></p>
+      </span>
     </div>
-  </div>
 </template>
 
 <template name="leaderboard">

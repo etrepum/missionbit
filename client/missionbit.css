@@ -618,25 +618,34 @@ body {
 
 #the-foot {
   color: black;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0.5em;
+  height: 4em;
 }
 
+/*body #footer-container {
+  background-color: white;
+  z-index: 11;
+}
+*/
 /*#footer-div .footer-inside {
   background-color: rgba(0,0,0,0.5);
 }*/
 
 .footer-span {
-  background-color: rgba(0,0,0,0.5);
-  padding: 2em;
+  padding: 0.5em 1em 0.25em 1em;
   border-radius: .5em;
-  background-color: rgba(255,255,255,0.5);
-}
-
-.footer {
+/*  background-color: rgba(255,255,255,0.5);*/
   background-color: rgba(0,0,0,0.5);
+  margin-top: 0.65em;
+  margin-right: 1em;
+  height: 2em;
 }
 
 #the-foot a {
-  color: rgba(1, 105, 201, 1);
+/*  color: rgba(1, 105, 201, 1);*/
+  color: white;
+/*  color: rgba(220, 19, 156, 0.5);*/
 }
 
 /* >>>>>>>>> LEADERBOARD <<<<<<<<< */
