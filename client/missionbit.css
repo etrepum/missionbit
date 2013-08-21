@@ -33,6 +33,26 @@ body {
   height: 2000px;
 }
 
+/* >>>>>>>>>> BRAND BAR <<<<<<<<<< */
+
+#top-brand-bar {
+  height: 2em;
+/*  background-color: white;*/
+/*  background-color: rgba(220, 19, 156,0.5);*/
+  background-color: rgba(1, 105, 201, 0.5);
+/*  background-color: rgba(251, 139, 0, 0.5);*/
+}
+
+#tweet-the-bit {
+  padding-top: 0.25em;
+}
+
+#tweet-the-bit a {
+  color: white;
+}
+
+
+
 /* >>>>>>>>> NAV <<<<<<<<<<< */
 
 #missionbit-logo-nav {

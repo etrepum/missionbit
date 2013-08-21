@@ -1,5 +1,5 @@
 <head>
-  <title> Mission Bit | Teaching Mission youth to code </title>
+  <title> Mission Bit | Teaching Mission, SF kids to code </title>
   <meta name="description" content="Mission Bit is a free computer programming school for youth living or school in the Mission, San Francisco, California">
   <meta name="keywords" content="javascript, ruby, mission, computer programming, code, education reform, san francisco, mission bit, donate">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -30,6 +30,9 @@
 </head>
 
 <body>
+  <div id="top-brand-bar" class="market-nav">
+    {{> marketNav}}
+  </div>
   <div id="mission-bit-div-container">
     <div id="mission-bit" class="container">
       {{> navigation}}
@@ -48,6 +51,14 @@
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="bootstrap/js/bootstrap-button.js"></script>
 </body>
+
+<template name="marketNav">
+  <div id="tweet-the-bit" class="span3 pull-right tweet-button">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="missionbit" data-count="none">Tweet Mission Bit</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+  </div>
+</template>
 
 <template name="navigation">
   <div class="navbar-wrapper">
