@@ -30,18 +30,6 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
-    <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=414068525364559";
-      fjs.parentNode.insertBefore(js, fjs);
-    }
-    (document, 'script', 'facebook-jssdk'));
-    </script>
-
   <div id="top-brand-bar" class="market-nav">
     {{> marketNav}}
   </div>
@@ -59,6 +47,28 @@
       {{> footer}}
     </div>
   </div>
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      // init the FB JS SDK
+      FB.init({
+        appId      : '414068525364559',                        // App ID from the app dashboard
+        // channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+        status     : false,                                 // Check Facebook Login status
+        xfbml      : true                                  // Look for social plugins on the page
+      });
+      // Additional initialization code such as adding Event Listeners goes here
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=414068525364559";
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
+  </script>
   <script src="bootstrap/js/bootstrap-carousel.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="bootstrap/js/bootstrap-button.js"></script>
@@ -69,7 +79,9 @@
     <a href="https://twitter.com/share" class="twitter-share-button" data-text="Mission Bit | Teaching Mission, SF kids to code!" data-via="missionbit" data-count="none">Tweet Mission Bit</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
-  <div class="fb-like" data-href="http://www.missionbit.com" data-width="400" data-show-faces="false" data-send="false"></div>
+  <div class="span4 pull-right">
+    <div class="fb-like" data-href="http://www.missionbit.com" data-width="400" data-show-faces="false" data-send="false"></div>
+  </div>
 </template>
 
 <template name="navigation">

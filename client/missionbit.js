@@ -1,4 +1,9 @@
 
+Accounts.ui.config({
+  requestPermissions: {
+    facebook: ['user_friends']
+  }
+});
 
 Template.homeCarousel.insideClick = function () {
   var clickCheck = Session.get("divingIn");

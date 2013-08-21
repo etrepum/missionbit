@@ -51,6 +51,13 @@ body {
   color: white;
 }
 
+.fb-like {
+  height: 3em;
+  color: white;
+/*  z-index: 11;
+  background-color: white;*/
+}
+
 
 
 /* >>>>>>>>> NAV <<<<<<<<<<< */
