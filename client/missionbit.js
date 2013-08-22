@@ -14,6 +14,10 @@ Template.homeCarousel.siteEntry = function () {
   mixpanel.track("Site Entry");
 }
 
+Template.navigation.clicked = function () {
+  return Session.equals("selected_nav", this._id) ? "selected" : '';
+}
+
 Template.actionButtons.events({
   'mouseup #donate-action, touchend #donate-action': function () {
     mixpanel.track("Donate Button");
@@ -51,6 +55,27 @@ Template.actionButtons.events({
 })
 
 Template.navigation.events({
+  'mouseup #nav-code-school, touchend #nav-code-school': function () {
+    $("#nav-code-school").addClass("selected");
+    $("#nav-values").removeClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
+  },
+  'mouseup #nav-values, touchend #nav-values': function () {
+    $("#nav-values").addClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
+  },
+  'mouseup #nav-about, touchend #nav-about': function () {
+    $("#nav-about").addClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-values").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
+  }
+})
+
+Template.navigation.events({
   'mouseup #code-school, touchend #code-school': function () {
     mixpanel.track("Code School Nav");
     Session.set("codeSchool", true);
@@ -63,6 +88,7 @@ Template.navigation.events({
   },
   'mouseup #values, touchend #values': function () {
     mixpanel.track("Values Nav");
+    Session.set("selected_nav", this._id);
     Session.set("showValues", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
@@ -73,6 +99,7 @@ Template.navigation.events({
   },
   'mouseup #about, touchend #about': function () {
     mixpanel.track("About Nav");
+    Session.set("selected_nav", this._id);
     Session.set("aboutInfo", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
@@ -83,6 +110,7 @@ Template.navigation.events({
   },
   'mouseup #nav-brand, touchend #nav-brand': function () {
     mixpanel.track("Brand Home Nav");
+    Session.set("selected_nav", this._id);
     Session.set("aboutInfo", false);
     Session.set("divingIn", false);
     Session.set("codeSchool", false);
@@ -90,6 +118,10 @@ Template.navigation.events({
     Session.set("donate", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    $("#nav-brand").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-values").removeClass("selected");
   }
 })
 

@@ -15,7 +15,7 @@ Template.showValues.events({
         email: thisEmail
       })
       $('#values-input').remove();
-      $('#values-email-input').append('<input id="values-input" class="span11 values-email-input" type="email" placeholder="Enter Email Here" autofocus />');
+      $('#values-email-input').append('<input id="values-input" class="span11 values-email-input" type="email" placeholder="Enter Email Here"/>');
       $('#values-input-confirm-msg').append('<span id="values-email-confirm" class="span11"> You will receive newsletters via <span class="input-output"> '+ thisEmail +'</span></span>');
     }
   }
