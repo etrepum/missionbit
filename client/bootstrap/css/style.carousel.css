@@ -80,7 +80,7 @@
       padding-top: 25px;
       font-size: 120px;
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: rgba(220, 19, 156, 1);
+      background-color: rgba(220, 19, 156, 0.5);
 /*      background-color: orange;*/
       color: black;
       border: 0;
@@ -90,7 +90,7 @@
     }
 
     .carousel-control:hover {
-      background-color: black;
+      background-color: rgba(0,0,0,0.5);
       color: rgba(220, 19, 156, 1);
       border: 1px solid rgba(220, 19, 156, 1);
       box-shadow: -1px 1px 2px;

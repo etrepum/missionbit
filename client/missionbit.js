@@ -29,6 +29,11 @@ Template.actionButtons.events({
     Session.set("codeSchool", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-values").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
   },
   'mouseup #volunteer-action, touchend #volunteer-action': function () {
     mixpanel.track("Volunteer Button");
@@ -40,6 +45,11 @@ Template.actionButtons.events({
     Session.set("codeSchool", false);
     Session.set("donate", false);
     Session.set("learn", false);
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-values").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
   },
   'mouseup #learn-action, touchend #learn-action': function () {
     mixpanel.track("Learn Button");
@@ -51,6 +61,11 @@ Template.actionButtons.events({
     Session.set("codeSchool", false);
     Session.set("donate", false);
     Session.set("teach", false);
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-values").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
   }
 })
 
@@ -60,15 +75,25 @@ Template.navigation.events({
     $("#nav-values").removeClass("selected");
     $("#nav-about").removeClass("selected");
     $("#nav-brand").removeClass("selected");
+    $("#nav-support").removeClass("selected");
   },
   'mouseup #nav-values, touchend #nav-values': function () {
     $("#nav-values").addClass("selected");
     $("#nav-code-school").removeClass("selected");
     $("#nav-about").removeClass("selected");
     $("#nav-brand").removeClass("selected");
+    $("#nav-support").removeClass("selected");
   },
   'mouseup #nav-about, touchend #nav-about': function () {
     $("#nav-about").addClass("selected");
+    $("#nav-code-school").removeClass("selected");
+    $("#nav-values").removeClass("selected");
+    $("#nav-brand").removeClass("selected");
+    $("#nav-support").removeClass("selected");
+  },
+  'mouseup #nav-support, touchend #nav-support': function () {
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
     $("#nav-code-school").removeClass("selected");
     $("#nav-values").removeClass("selected");
     $("#nav-brand").removeClass("selected");
@@ -108,6 +133,17 @@ Template.navigation.events({
     Session.set("teach", false);
     Session.set("learn", false);
   },
+  'mouseup #support, touchend #support': function () {
+    mixpanel.track("Support Nav");
+    Session.set("showSupport", true);
+    Session.set("divingIn", true);
+    Session.set("aboutInfo", false);
+    Session.set("codeSchool", false);
+    Session.set("showValues", false);
+    Session.set("donate", false);
+    Session.set("teach", false);
+    Session.set("learn", false);
+  },
   'mouseup #nav-brand, touchend #nav-brand': function () {
     mixpanel.track("Brand Home Nav");
     Session.set("selected_nav", this._id);
@@ -122,6 +158,7 @@ Template.navigation.events({
     $("#nav-about").removeClass("selected");
     $("#nav-code-school").removeClass("selected");
     $("#nav-values").removeClass("selected");
+    $("#nav-support").removeClass("selected");
   }
 })
 
