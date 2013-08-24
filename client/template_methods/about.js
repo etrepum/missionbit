@@ -30,6 +30,11 @@ Template.aboutInfo.events({
     Session.set("codeSchool", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#donate-action-support").addClass("action-on");
+    $("#learn-action").removeClass("action-on");
+    $("#volunteer-action").removeClass("action-on");
   },
   'mouseup #volunteer-about, touchend #volunteer-about': function () {
     mixpanel.track("Volunteer Button");
@@ -41,6 +46,11 @@ Template.aboutInfo.events({
     Session.set("codeSchool", false);
     Session.set("donate", false);
     Session.set("learn", false);
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#volunteer-action").addClass("action-on");
+    $("#learn-action").removeClass("action-on");
+    $("#donate-action").removeClass("action-on");
   },
   'mouseup #learn-about, touchend #learn-about': function () {
     mixpanel.track("Learn Button");
@@ -52,6 +62,11 @@ Template.aboutInfo.events({
     Session.set("codeSchool", false);
     Session.set("donate", false);
     Session.set("teach", false);
+    $("#nav-support").addClass("selected");
+    $("#nav-about").removeClass("selected");
+    $("#learn-action").addClass("action-on");
+    $("#donate-action").removeClass("action-on");
+    $("#volunteer-action").removeClass("action-on");
   }
 })
 

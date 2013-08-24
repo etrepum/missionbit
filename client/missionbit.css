@@ -38,9 +38,10 @@ body {
   color: rgba(255,255,255, 0.95);
   background-color: rgba(0,0,0,0.5);
   text-align: center;
-  padding-top: .5em;
+  padding-top: 1.25em;
   border-radius: 0.5em;
   border: 0.15em solid rgba(220, 19, 156, 0.5);
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* >>>>>>>>>> BRAND BAR <<<<<<<<<< */
@@ -95,17 +96,44 @@ body {
 
 /* >>>>>>>>> DONATE <<<<<<<<<<< */
 
+#total-pledges {
+  font-size: 1.5em;
+}
+
+#pledge-statement {
+  text-align: center;
+  margin-top: 3em;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0.5em;
+  color: silver;
+  padding-top: 0.75em;
+}
+
+#brand-name {
+  font-family: 'Aldrich', sans-serif;
+}
+
 #pledge-please-signin h1 {
   color: rgba(220,19,156,0.75);
 }
 
 #pledge-marketing-text {
-  background-color: rgba(0,0,0,.75);
-/*  background-color: rgba(220,19,156,0.75);*/
+/*  background-color: rgba(0,0,0,.75);*/
+  background-color: rgba(220,19,156,0.5);
   padding: 1em;
   border-radius: .5em;
-  color: white;
-  margin-top: 7em;
+  color: rgba(255,255,255,0.9);
+  margin-top: 5em;
+  border: 1px solid rgba(251, 139, 0, 0.75);
+}
+
+#fund-allocation {
+  background-color: rgba(0,0,0,.75);
+  padding-bottom: 2em;
+  border-radius: .5em;
+  color: orange;
+  margin-top: 1em;
+  text-align: center;
 }
 
 .pledge-input:hover {
@@ -197,7 +225,7 @@ body {
 
 .pledge-submit-button {
     vertical-align: bottom;
-    background-color: rgba(220, 19, 156, 0.85);
+    background-color: rgba(220, 19, 156, 0.5);
     color: white;
     font-size: 1.5em;
     border: 1px solid white;
@@ -232,7 +260,7 @@ body {
 }
 
 #pledge-submit-row {
-    margin-top: 1em;
+    margin-top: 3em;
     margin-bottom: 16em;
 }
 
@@ -245,11 +273,19 @@ body {
 }
 
 #pledge-details-row {
-    margin-top: 8em;
+    margin-top: 3em;
+}
+
+#pledge-target {
+  color: rgba(0,0,0,1);
 }
 
 #pledge-details-div {
     vertical-align: middle;
+    background-color: rgba(1, 105, 201, 0.5);
+    padding: 2em 0;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 0.5em;
 }
 
 #pledge-grand-total-title {
@@ -261,14 +297,14 @@ body {
 
 #pledge-grand-total-amount {
     font-size: 6em;
-/*    font-family: 'Racing Sans One', cursive;*/
     font-family: 'Audiowide', cursive;
-    color: rgba(1, 105, 201, 1);
+/*    color: rgba(1, 105, 201, 1);*/
+    color: rgba(251,139,0,0.75);
     text-shadow: 2px 2px white;
 }
 
 #footnotes-div {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
 }
 
 #footnotes-text {
