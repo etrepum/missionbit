@@ -155,9 +155,12 @@ body {
   border-radius: .5em;
 }
 
-#pledge-marketing-row,
-#acknowledge-pledge-row {
+#pledge-marketing-row {
     margin-top: 2em;
+}
+
+#acknowledge-pledge-row {
+  margin-top: 6em;
 }
 
 #pledge-marketing-div,
