@@ -31,6 +31,18 @@ body {
   height: 2000px;
 }
 
+/* >>>>>>>>>> NEWSFLASH <<<<<<<<<< */
+
+#news-alert {
+  margin-top: 6em;
+  color: rgba(255,255,255, 0.95);
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  padding-top: .5em;
+  border-radius: 0.5em;
+  border: 0.15em solid rgba(220, 19, 156, 0.5);
+}
+
 /* >>>>>>>>>> BRAND BAR <<<<<<<<<< */
 
 #top-brand-bar {
@@ -360,7 +372,7 @@ body {
 
 #donate-action-div {
   position: static;
-  margin-top: 150px;
+  margin-top: 2em;
   color: white;
   padding-left: 7em;
   font-family: 'Expletus Sans', cursive;
