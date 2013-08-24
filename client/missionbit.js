@@ -23,12 +23,17 @@ Template.actionButtons.events({
     mixpanel.track("Donate Button");
     Session.set("donate", true);
     Session.set("divingIn", true);
-    Session.set("pledgeReady", true)
+    Session.set("pledgeReady", true);
+    Session.set("showSupport", true);
     Session.set("showValues", false);
-    Session.set("aboutInfo", false)
+    Session.set("aboutInfo", false);
     Session.set("codeSchool", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    Session.set("showSupport", false);
+    $("#donate-action-support").addClass("action-on");
+    $("#learn-action").removeClass("action-on");
+    $("#volunteer-action").removeClass("action-on");
     $("#nav-support").addClass("selected");
     $("#nav-about").removeClass("selected");
     $("#nav-code-school").removeClass("selected");
@@ -39,12 +44,16 @@ Template.actionButtons.events({
     mixpanel.track("Volunteer Button");
     Session.set("teach", true);
     Session.set("divingIn", true);
-    Session.set("pledgeReady", true)
+    Session.set("pledgeReady", true);
     Session.set("showValues", false);
-    Session.set("aboutInfo", false)
+    Session.set("aboutInfo", false);
     Session.set("codeSchool", false);
     Session.set("donate", false);
     Session.set("learn", false);
+    Session.set("showSupport", false);
+    $("#volunteer-action").addClass("action-on");
+    $("#learn-action").removeClass("action-on");
+    $("#donate-action").removeClass("action-on");
     $("#nav-support").addClass("selected");
     $("#nav-about").removeClass("selected");
     $("#nav-code-school").removeClass("selected");
@@ -55,12 +64,16 @@ Template.actionButtons.events({
     mixpanel.track("Learn Button");
     Session.set("learn", true);
     Session.set("divingIn", true);
-    Session.set("pledgeReady", true)
+    Session.set("pledgeReady", true);
     Session.set("showValues", false);
-    Session.set("aboutInfo", false)
+    Session.set("aboutInfo", false);
     Session.set("codeSchool", false);
     Session.set("donate", false);
     Session.set("teach", false);
+    Session.set("showSupport", false);
+    $("#learn-action").addClass("action-on");
+    $("#donate-action").removeClass("action-on");
+    $("#volunteer-action").removeClass("action-on");
     $("#nav-support").addClass("selected");
     $("#nav-about").removeClass("selected");
     $("#nav-code-school").removeClass("selected");
@@ -110,10 +123,11 @@ Template.navigation.events({
     Session.set("donate", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    Session.set("showSupport", false);
   },
   'mouseup #values, touchend #values': function () {
     mixpanel.track("Values Nav");
-    Session.set("selected_nav", this._id);
+    // Session.set("selected_nav", this._id);
     Session.set("showValues", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
@@ -121,10 +135,11 @@ Template.navigation.events({
     Session.set("donate", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    Session.set("showSupport", false);
   },
   'mouseup #about, touchend #about': function () {
     mixpanel.track("About Nav");
-    Session.set("selected_nav", this._id);
+    // Session.set("selected_nav", this._id);
     Session.set("aboutInfo", true);
     Session.set("divingIn", true);
     Session.set("codeSchool", false);
@@ -132,6 +147,7 @@ Template.navigation.events({
     Session.set("donate", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    Session.set("showSupport", false);
   },
   'mouseup #support, touchend #support': function () {
     mixpanel.track("Support Nav");
@@ -146,7 +162,7 @@ Template.navigation.events({
   },
   'mouseup #nav-brand, touchend #nav-brand': function () {
     mixpanel.track("Brand Home Nav");
-    Session.set("selected_nav", this._id);
+    // Session.set("selected_nav", this._id);
     Session.set("aboutInfo", false);
     Session.set("divingIn", false);
     Session.set("codeSchool", false);
@@ -154,6 +170,7 @@ Template.navigation.events({
     Session.set("donate", false);
     Session.set("teach", false);
     Session.set("learn", false);
+    Session.set("showSupport", false);
     $("#nav-brand").addClass("selected");
     $("#nav-about").removeClass("selected");
     $("#nav-code-school").removeClass("selected");

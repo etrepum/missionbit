@@ -83,11 +83,17 @@ body {
 
 /* >>>>>>>>> DONATE <<<<<<<<<<< */
 
+#pledge-please-signin h1 {
+  color: rgba(220,19,156,0.75);
+}
+
 #pledge-marketing-text {
   background-color: rgba(0,0,0,.75);
+/*  background-color: rgba(220,19,156,0.75);*/
   padding: 1em;
   border-radius: .5em;
   color: white;
+  margin-top: 7em;
 }
 
 .pledge-input:hover {
@@ -265,7 +271,7 @@ body {
 
 #volunteer-teach-row,
 #volunteer-learn-row {
-    margin-top: 1em;
+    margin-top: 7em;
 }
 
 #volunteer-teach-div,
@@ -440,7 +446,7 @@ body {
 .value-caption {
 /*    background-color: rgba(251, 139, 0, 1);*/
 /*    background-color: rgba(220, 19, 156, 1);*/
-    background-color: rgba(1, 105, 201, 1);
+    background-color: rgba(1, 105, 201, 0.75);
     position: static;
     padding: 20px 20px 30px 20px;
     margin-top: 100px;
@@ -563,7 +569,7 @@ body {
 
 .call-action {
     text-align: center;
-    background-color: rgba(251, 139, 0, 1);
+    background-color: rgba(251, 139, 0, 0.75);
     text-align: center;
     font-size: 3em;
     height: 1.10em;
@@ -575,7 +581,7 @@ body {
 }
 
 .call-action:hover {
-    background-color: black;
+    background-color:rgba(0,0,0,0.5);
     color: rgba(251, 139, 0, 1);
     border: 1px solid rgba(251, 139, 0, 1);
     box-shadow: inset 1px 1px 2px;
@@ -591,7 +597,7 @@ body {
 
 #EMI-link,
 #OoS-link {
-  color: rgba(220, 19, 156, 1);
+  color: rgba(220, 19, 156, 0.75);
 /*  color: darkslategray;*/
 }
 
@@ -701,6 +707,15 @@ body {
     box-shadow: inset 1px 1px 2px;
 }
 
+/*#donate-action .action-on,
+#volunteer-action .action-on,
+#learn-action .action-on {
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(251, 139, 0, 1);
+    border: 1px solid rgba(251, 139, 0, 1);
+    box-shadow: inset 1px 1px 2px;
+}*/
+
 /* >>>>>>>>>> FOOTER <<<<<<<<<<<<< */
 
 #the-foot {
@@ -796,3 +811,4 @@ body {
     padding-top: .5em;
 }
 
+x

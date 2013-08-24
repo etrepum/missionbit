@@ -65,10 +65,12 @@ Template.letsDonate.totalPledges = function () {
 Template.letsDonate.events({
   'click #donate-pledge-submit': function (event) {
     mixpanel.track("Pledge Made");
+    Session.set("showSupport", false);
     event.preventDefault();
     if (Meteor.userId() == null) {
       document.forms["pledge-form"].reset();
       $('.pledge-marketing').remove();
+      $('#pledge-please-signin').remove();
       $('#pledge-marketing-text').append('<span id="pledge-please-signin" class="signin-alert"><h1> Please sign in to make a pledge. Thank You.</h></span>');
       // Session.set("pledgeReady", false);
       // Session.set("pledgeReady", true);
