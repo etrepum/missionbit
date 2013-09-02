@@ -2,12 +2,17 @@
 Template.letsDonate.toDonate = function () {
   var makeDonation = Session.get("donate");
   return makeDonation;
-}
+};
+
+Template.donateCash.toDonate = function () {
+  var makeDonation = Session.get("donate");
+  return makeDonation;
+};
 
 Template.letsDonate.pledgeReady = function () {
   var pledgeReady = Session.get("pledgeReady");
   return pledgeReady;
-}
+};
 
 Template.letsDonate.alreadyPledged = function () {
   var thisUser = Meteor.userId();
@@ -23,14 +28,14 @@ Template.letsDonate.alreadyPledged = function () {
       return false;
     }
   }
-}
+};
 
 Template.letsDonate.pledgeNumber = function () {
   var thisUser = Meteor.userId();
   var pledgeNumberCheck = Pledges.find({donor: thisUser}).count();
   console.log(pledgeNumberCheck);
   return pledgeNumberCheck;
-}
+};
 
 Template.letsDonate.userPledgeTotal = function () {
   var thisUser = Meteor.userId();
@@ -45,7 +50,7 @@ Template.letsDonate.userPledgeTotal = function () {
     })
   return pledgeTotal;
   }
-}
+};
 
 Template.letsDonate.totalPledges = function () {
   var totalPledges = Pledges.find({}).fetch();
@@ -59,7 +64,7 @@ Template.letsDonate.totalPledges = function () {
     })
   return pledgeTotal;
   }
-}
+};
 
 
 Template.letsDonate.events({
@@ -89,4 +94,4 @@ Template.letsDonate.events({
       document.forms["pledge-form"].reset();
     }
   }
-})
+});

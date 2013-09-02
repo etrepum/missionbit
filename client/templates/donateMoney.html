@@ -1,0 +1,101 @@
+
+<template name="donateCash">
+  {{#if toDonate}}
+
+    <div id="pledge-marketing-row" class="row">
+      <div id="pledge-marketing-div" class="span12 donate-marketing">
+        <div id="pledge-marketing-text" class="marketing-text">
+          <span class="pledge-marketing">
+            <h1> <span id="brand-name"> Mission Bit</span>, free computer programming classes for San Francisco public school middle and high school students.</h1>
+            <h2><span id="pledge-target"> PLEASE DONATE! </span></h2>
+            <h2> Mission Bit is a 501(c)3 non-profit. All donations are 100% tax deductible </h2>
+          </span>
+        </div>
+      </div> <!-- MARKETING-DIV -->
+    </div> <!-- ROW -->
+
+    <div id="membership-levels" class="row">
+      <div id="basic-member" class="span12">
+        <div id="member-levels-row" class="row">
+          <div id="door-opener-div" class="span4 pull-left member-levels">
+            <h1 class="level-title"> Door Opener </h1>
+            <h2 class="level-amount"> $100 </h2>
+            <div id="100-donate-button" class="donate-button">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="9ZLY76FGN22BC">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
+            <span class="benefits-title"> Benefits </span>
+            </br>
+            <span class="pull-left benefit-bullet"> Mission Bit Limitied Edition Hoodie </span>
+            </br>
+            <span class="pull-left benefit-bullet"> Invites to special Mission Bit events </span>
+            </br>
+          </div>
+          <div id="career-launcher-div" class="span4 member-levels">
+            <h1 class="level-title"> Career Launcher </h1>
+            <h2 class="level-amount"> $250 </h2>
+            <div id="250-donate-button" class="donate-button">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="3HEUYY2D4C5JQ">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
+            <span class="benefits-title"> Benefits </span>
+            </br>
+            <span class="pull-left benefit-bullet"> Mission Bit limitied edition Hoodie </span>
+            </br>
+            <span class="pull-left benefit-bullet"> Second priority invites to Mission Bit events </span>
+            </br>
+            <span class="pull-left benefit-bullet"> 10% discount on Mission Bit products </span>
+            </br>
+          </div>
+          <div id="life-changer-div" class="span4 pull-right member-levels">
+            <h1 class="level-title"> Life Changer </h1>
+            <h2 class="level-amount"> $1000 </h2>
+            <div id="1000-donate-button" class="donate-button">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="8W3A2ZRBAS9D8">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+              <span class="benefits-title"> Benefits </span>
+              </br>
+              <span class="pull-left benefit-bullet"> Mission Bit Limitied Edition Hoodie </span>
+              </br>
+              <span class="pull-left benefit-bullet"> First priority invites to Mission Bit events </span>
+              </br>
+              <span class="pull-left benefit-bullet"> 20% discount on Mission Bit products </span>
+              </br>
+              <span class="pull-left benefit-bullet"> Special opportunity to meet the students </span>
+              </br>
+            </div>
+          </div>
+        </div> <!-- MEMBER LEVEL ROW -->
+
+        <div id="general-donation-row" class="row">
+          <div id="general-donation-div" class="span12">
+            <div class="span4 pull-left">
+              <h1 id="general-donation" class="level-title"> General Donation </h1>
+            </div>
+            <div class="span3 pull-right">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="SY5W7CMNDH6K6">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
+          </div> <!-- GENERAL DONATION DIV -->
+        </div> <!-- ROW -->
+      </div>
+    </div>
+
+  {{/if}}
+</template>
