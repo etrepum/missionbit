@@ -108,7 +108,7 @@
     }
 
     .carousel .item {
-      height: 500px;
+      height: 600px;
     }
     .carousel img {
       position: absolute;
@@ -122,10 +122,11 @@
     .carousel-caption {
       background-color: rgba(1, 105, 201, 0.75);
       position: static;
-      max-width: 550px;
+      /*max-width: 550px;*/
+      max-width: 950px;
       padding: 20px 20px 30px 20px;
       margin-top: 2em;
-      margin-left: 75px;
+      margin-left: 115px;
       border-radius: 20px;
 /*      border: 1px solid rgba(255,255,255,1);*/
       border: 1px solid rgba(251, 139, 0, 0.75);
@@ -153,12 +154,17 @@
     .carousel-caption .lead {
 /*      font-family: 'Aldrich', sans-serif;*/
       font-family: 'Josefin Sans', sans-serif;
-      padding-top: 10px;
+      padding-top: 1em;
+      font-size: 2em;
     }
 
     .carousel-caption .btn {
       margin-top: 10px;
     }
+
+/*    #first-caption {
+      padding-right: 3em;
+    }*/
 
 
     /* MARKETING CONTENT

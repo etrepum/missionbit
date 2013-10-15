@@ -22,8 +22,9 @@ body {
     user-select: none;
 /*    background-color: silver;*/
 /*    background-color: rgba(192, 192, 192, 0.5);*/
-    background-image: url('http://download.ultradownloads.com.br/wallpaper/130270_Papel-de-Parede-Estilo-Matrix_1680x1050.jpg');
-    background-size: 120% auto;
+/*    background-image: url('http://download.ultradownloads.com.br/wallpaper/130270_Papel-de-Parede-Estilo-Matrix_1680x1050.jpg');*/
+    background-image: url('http://i852.photobucket.com/albums/ab89/gigmania/missionbit_logo_vertical-1.jpg');
+    background-size: 100% auto;
 }
 
 #mission-bit-div-container {
@@ -43,6 +44,7 @@ body {
   border: 0.15em solid rgba(220, 19, 156, 0.5);
   font-family: 'Josefin Sans', sans-serif;
 }
+
 
 /* >>>>>>>>>> BRAND BAR <<<<<<<<<< */
 

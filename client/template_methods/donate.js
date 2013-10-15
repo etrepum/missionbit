@@ -1,4 +1,17 @@
 
+Template.donateCash.events({
+  'mouseup #100-donate-button, touchend #100-donate-button': function() {
+    mixpanel.track("100-Donate");
+  },
+  'mouseup #250-donate-button, touchend #250-donate-button': function() {
+    mixpanel.track("250-Donate");
+  },
+  'mouseup #1000-donate-button, touchend #1000-donate-button': function() {
+    mixpanel.track("1000-Donate");
+  }
+})
+
+
 Template.letsDonate.toDonate = function () {
   var makeDonation = Session.get("donate");
   return makeDonation;
