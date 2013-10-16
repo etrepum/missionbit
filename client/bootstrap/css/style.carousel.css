@@ -123,14 +123,16 @@
       background-color: rgba(1, 105, 201, 0.95);
       position: static;
       /*max-width: 550px;*/
-      max-width: 950px;
+      max-width: 73em;
       padding: 20px 20px 30px 20px;
       margin-top: 2em;
-      margin-left: 115px;
+      margin-left: 12em;
+      margin-right: 12em;
       border-radius: 20px;
 /*      border: 1px solid rgba(255,255,255,1);*/
-      border: 1px solid rgba(251, 139, 0, 0.75);
-/*      border: 2px solid rgba(220, 19, 156, 1);*/
+/*      border: 3px solid rgba(251, 139, 0, 1);*/
+/*      border: 3px solid rgba(220, 19, 156, 1);*/
+      border: 3px solid rgba(0,0,0, 1);
     }
 
     .item .code-school {
@@ -203,11 +205,11 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    .marketing h2:hover {
+/*    .marketing h2:hover {
       color: black;
       opacity: 0.75;
       text-shadow: 1px 1px 3px;
-    }
+    }*/
 
     .marketing .span3 p,
     .marketing .span4 p,

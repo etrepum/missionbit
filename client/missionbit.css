@@ -30,7 +30,7 @@ body {
 
 #mission-bit-div-container {
   background-color: rgba(255,255,255,.25);
-  height: 100%;
+  height: 130em;
   background:
       radial-gradient(black 15%, transparent 16%) 0 0,
       radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -44,12 +44,14 @@ body {
 
 #news-alert {
   margin-top: 6em;
-  color: rgba(255,255,255, 0.95);
+  color: rgba(255,255,255, 1);
+  text-shadow: 3px 3px 3px rgba(220, 19, 156, 1);
   background-color: rgba(0,0,0,0.80);
   text-align: center;
   padding-top: 1.25em;
   border-radius: 0.5em;
-  border: 0.15em solid rgba(220, 19, 156, 0.5);
+/*  border: 0.15em solid rgba(220, 19, 156, 0.5);*/
+  border: 3px solid rgba(220, 19, 156, 1);
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -60,7 +62,7 @@ body {
   height: 2em;
 /*  background-color: rgba(255,255,255,0.5);*/
 /*  background-color: rgba(220, 19, 156,0.5);*/
-  background-color: rgba(1, 105, 201, 0.8);
+  background-color: rgba(1, 105, 201, 0.65);
 /*  background-color: rgba(251, 139, 0, 0.5);*/
 }
 
@@ -72,9 +74,9 @@ body {
 #tweet-the-bit a {
   /*  color: white;*/
 /*  color: rgba(251, 139, 0, 1);*/
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: rgba(255,255,255,1);
-  font-weight: bold;
+/*  font-weight: bold;*/
 }
 
 #tweet-the-bit a:hover {
@@ -745,6 +747,7 @@ body {
     border-radius: 0.5em;
     padding: 2em 0;
     border: 1px solid rgba(251, 139, 0, 1);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #EMI-link,
@@ -832,18 +835,67 @@ body {
 
 /* >>>>>>>>>> SUPPORT <<<<<<<<<<<<< */
 
+#sponsor-title-div {
+  background-color: silver;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  border: 2px solid rgba(220, 19, 156, 0.8);
+}
+
+/*#sponsor-title-div:hover {
+  color: white;
+}*/
+
+.sponsor-title {
+  margin-left: 1em;
+}
+
+#sponsor-logo-container {
+  margin-bottom: 6em;
+}
+
+.sponsor-logo-row {
+  vertical-align: bottom;
+}
+
+.sponsor-name {
+  color:white;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 0.5em;
+  border: 2px solid rgba(251, 139, 0, 1);
+}
+
 #support-welcome-msg {
   text-align: center;
-/*  background-color: rgba(255,255,255,0.5);*/
   background-color: rgba(0,0,0,0.8);
   color: white;
-  margin-bottom: 2em;
+  margin-top: 2em;
+/*  margin-bottom: 1em;*/
   border-radius: 0.5em;
+  border: 2px solid rgba(251, 139, 0, 1);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#dena-logo {
+  padding-top: 2.5em;
+}
+
+#evb-logo {
+  padding: 1em 0 0.5em 0;
 }
 
 #support-row {
-  margin-top: 7em;
-  margin-bottom: 14em;
+  margin-top: 8em;
+/*  margin-bottom: 14em;*/
+}
+
+#sponsor-name-row {
+  margin-top: 0.5em;
+}
+
+#sponsor-name-row h2 {
+  font-family: 'Expletus Sans', cursive;
+  padding-top: 0.25em;
 }
 
 #donate-action-support {
@@ -851,6 +903,7 @@ body {
   color: white;
   padding-left: 7em;
   font-family: 'Expletus Sans', cursive;
+  margin-left: 4em;
 }
 
 #volunteer-action-support {
