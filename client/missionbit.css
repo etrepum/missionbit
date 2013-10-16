@@ -30,7 +30,7 @@ body {
 
 #mission-bit-div-container {
   background-color: rgba(255,255,255,.25);
-  height: 1000px;
+  height: 100%;
   background:
       radial-gradient(black 15%, transparent 16%) 0 0,
       radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -432,7 +432,7 @@ body {
 
 #values-email-msg {
   margin-top: 2em;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   margin-bottom: 1em;
   color: white;
   padding-top: 2em;
@@ -587,16 +587,16 @@ body {
 .value-caption {
 /*    background-color: rgba(251, 139, 0, 1);*/
 /*    background-color: rgba(220, 19, 156, 1);*/
-    background-color: rgba(1, 105, 201, 0.75);
+    background-color: rgba(1, 105, 201, 0.9);
     position: static;
     padding: 20px 20px 30px 20px;
     margin-top: 100px;
-    border-radius: 20px;
+    border-radius: 0.5em;
     line-height: 1.25;
     color: #fff;
     /*color: rgba(251, 139, 0, 1);*/
 /*    color: rgba(1, 105, 201, 1);*/
-    text-shadow: 1px 1px 1px rgba(220, 19, 156, 1);
+    text-shadow: 0 2px 2px rgba(220, 19, 156, 1);
     border: .25em solid rgba(251, 139, 0, 1);
 }
 
@@ -667,10 +667,11 @@ body {
 }*/
 
 .team-member-bio {
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0,0,0,.8);
   padding: 1em;
   border-radius: .5em;
   margin: 2em 0;
+  border: 1px solid rgba(251, 139, 0, 1);
 }
 
 #about-container {
@@ -731,9 +732,10 @@ body {
 #general-info {
     text-align: center;
     margin-bottom: 2em;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     border-radius: 0.5em;
     padding: 2em 0;
+    border: 1px solid rgba(251, 139, 0, 1);
 }
 
 #EMI-link,
@@ -788,7 +790,7 @@ body {
 
 #email-input:hover {
 /*  background-color: rgba(251, 139, 0, 1);*/
-  background-color: rgba(220, 19, 156, 0.5);
+  background-color: rgba(220, 19, 156, 0.8);
   color: white;
   border: 1px solid white;
 }
@@ -806,6 +808,11 @@ body {
 #contact-numbers {
     margin-top: 1em;
     text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    padding: 0.75em 0;
+    border-radius: 0.5em;
+    border: 1px solid rgba(251, 139, 0, 1);
 }
 
 .contact-email {
@@ -817,7 +824,7 @@ body {
 #support-welcome-msg {
   text-align: center;
 /*  background-color: rgba(255,255,255,0.5);*/
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   color: white;
   margin-bottom: 2em;
   border-radius: 0.5em;
