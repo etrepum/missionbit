@@ -80,7 +80,7 @@
       padding-top: 25px;
       font-size: 120px;
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: rgba(220, 19, 156, 0.5);
+      background-color: rgba(220, 19, 156, 0.8);
 /*      background-color: orange;*/
       color: black;
       border: 0;
@@ -90,18 +90,18 @@
     }
 
     .carousel-control:hover {
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.8);
       color: rgba(220, 19, 156, 1);
       border: 1px solid rgba(220, 19, 156, 1);
       box-shadow: -1px 1px 2px;
     }
 
     #myCarousel-codeschool .carousel-control {
-      background-color: rgba(1, 105, 201, 0.5);
+      background-color: rgba(1, 105, 201, 0.8);
     }
 
     #myCarousel-codeschool .carousel-control:hover {
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.8);
       color: rgba(1, 105, 201, 1);
       border: 1px solid rgba(1, 105, 201, 1);
       box-shadow: -1px 1px 2px;
@@ -120,7 +120,7 @@
     }
 
     .carousel-caption {
-      background-color: rgba(1, 105, 201, 0.75);
+      background-color: rgba(1, 105, 201, 0.95);
       position: static;
       /*max-width: 550px;*/
       max-width: 950px;
@@ -141,8 +141,10 @@
     .carousel-caption .lead {
       margin: 0;
       line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+/*      color: rgba(0,0,0,1);*/
+      color: rgba(255,255,255,1);
+/*      text-shadow: 0 1px 1px rgba(255,255,255,.8);*/
+      text-shadow: 0 2px 2px rgba(0,0,0,.8);
     }
     .carousel-caption h1 {
       font-family: 'Audiowide', cursive;
