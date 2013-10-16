@@ -60,18 +60,25 @@ body {
   height: 2em;
 /*  background-color: rgba(255,255,255,0.5);*/
 /*  background-color: rgba(220, 19, 156,0.5);*/
-  background-color: rgba(1, 105, 201, 0.5);
+  background-color: rgba(1, 105, 201, 0.8);
 /*  background-color: rgba(251, 139, 0, 0.5);*/
 }
 
 #tweet-the-bit {
   padding-top: 0.25em;
+  margin-right: 3em;
 }
 
 #tweet-the-bit a {
   /*  color: white;*/
-  color: rgba(251, 139, 0, 1);
+/*  color: rgba(251, 139, 0, 1);*/
+  font-size: 1.5em;
+  color: rgba(255,255,255,1);
   font-weight: bold;
+}
+
+#tweet-the-bit a:hover {
+  color: rgba(0,0,0,0.8);
 }
 
 .fb-like {
@@ -119,9 +126,10 @@ body {
 }
 
 .member-levels {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   padding: 1em 0 2em 0;
   border-radius: 0.5em;
+/*  border: 1px solid rgba(220,19,156,1);*/
 }
 
 .membership-title {
@@ -133,7 +141,7 @@ body {
   color: rgba(251, 139, 0, 0.95);
 /*  background-color: white;*/
   background-color: rgba(220,19,156,0.45);
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,1);
   border-radius: 0.25em;
   margin-left: 1em;
   margin-top: 1em;
@@ -148,7 +156,7 @@ body {
 
 #general-donation-div {
   padding-top: 1em;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   border-radius: 0.5em;
   border: 1px solid rgba(255,255,255,0.5);
   color: rgba(255,255,255,1);
@@ -206,12 +214,13 @@ body {
 
 #pledge-marketing-text {
 /*  background-color: rgba(0,0,0,.75);*/
-  background-color: rgba(220,19,156,0.30);
+  background-color: rgba(220,19,156,0.9);
   padding: 1em;
   border-radius: .5em;
   color: rgba(255,255,255,0.9);
+  text-shadow: 2px 2px 2px rgba(0,0,0,1);
   margin-top: 5em;
-  border: 1px solid rgba(251, 139, 0, 0.75);
+  border: 1px solid black;
 }
 
 #fund-allocation {
@@ -423,7 +432,7 @@ body {
 
 #teach-input-msg,
 #learn-input-msg {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   margin-bottom: 2em;
   color: white;
   padding-top: 2em;
@@ -468,7 +477,7 @@ body {
 #teach-input:hover,
 #learn-input:hover,
 #values-input:hover {
-    background-color: rgba(220, 19, 156, 0.75);
+    background-color: rgba(220, 19, 156, 0.85);
     border: 1px solid white;
 }
 
@@ -711,19 +720,19 @@ body {
 
 .call-action {
     text-align: center;
-    background-color: rgba(251, 139, 0, 0.75);
+    background-color: rgba(251, 139, 0, 0.85);
     text-align: center;
     font-size: 3em;
     height: 1.10em;
     padding-top: 0.6em;
     border-radius: .15em;
     color: black;
-    border: 1px solid white;
+    border: 1px solid black;
     box-shadow: 1px 1px 2px;
 }
 
 .call-action:hover {
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.8);
     color: rgba(251, 139, 0, 1);
     border: 1px solid rgba(251, 139, 0, 1);
     box-shadow: inset 1px 1px 2px;
@@ -740,7 +749,9 @@ body {
 
 #EMI-link,
 #OoS-link {
-  color: rgba(220, 19, 156, 0.75);
+/*  color: rgba(220, 19, 156, 0.75);*/
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 3px 3px 3px rgba(220, 19, 156, 0.75);
 /*  color: darkslategray;*/
 }
 
@@ -879,7 +890,7 @@ body {
 #the-foot {
   color: rgba(251, 139, 0, 0.75);
 /*  background-color: rgba(255,255,255,0.5);*/
-  background-color: rgba(1, 105, 201, 0.5);
+  background-color: rgba(1, 105, 201, 0.8);
   border-radius: 0.5em;
   height: 4em;
 }
